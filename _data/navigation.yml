@@ -34,6 +34,12 @@ main:
 
 # documentation links
 docs:
+  - title: Unix
+    children:
+      - title: "Centos installation"
+        url: /docs/centos-Installation/
+      - title: "linux-command"
+        url: /docs/linux-command/
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
