@@ -27,15 +27,15 @@ main:
   - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
-    url: /collection-archive/
-      - title: "Sample Collections"
-    url: /collection-archive/
-      - title: "Sample Collections"
-    url: /collection-archive/
-      - title: "Sample Collections"
-    url: /collection-archive/
-      - title: "Sample Collections"
-    url: /collection-archive/
+    url: /collection-archive1/
+      - title: "Sample Col23lections"
+    url: /collection-archive2/
+      - title: "Sample Collㅇㅇections"
+    url: /collection-archive3/
+      - title: "Sample Collectiㅍㅁㅇㅁons"
+    url: /collection-archive4/
+      - title: "Sample Collectiㅁㄴons"
+    url: /collection-archive5/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
 
