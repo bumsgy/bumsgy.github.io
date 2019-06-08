@@ -21,7 +21,7 @@ toc: true
 ```
 https://btyy.tistory.com/48
 
-2. 유선 또는 무선 인터넷 사용.
+2. 유선 또는 무선 인터넷 사용
 ```
   ifconfig <interface명> up     // 인터페이스를 작동시킨다.
   또는,
