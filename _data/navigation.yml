@@ -24,6 +24,9 @@ main:
     url: /docs/quick-start-guide/
   - title: "About"
     url: /about/
+    children :
+      - title: "Child Link 1"
+        url: /child-1-page-url/
   - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
