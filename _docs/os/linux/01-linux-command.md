@@ -30,7 +30,6 @@ https://btyy.tistory.com/48
   ifconfig <interface명>  // 해당 interface명에 대한 정보만 표시.
 ```
 
-
 https://blog.work6.kr/60
 https://withjeon.com/2018/03/09/wifi-in-linux/
 https://wikidocs.net/3200
