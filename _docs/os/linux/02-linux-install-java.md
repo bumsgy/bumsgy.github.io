@@ -1,5 +1,5 @@
 ---
-title: "linux 계열 명령어 정리"
+title: "linux java 설치"
 permalink: /docs/linux-install-java/
 excerpt: "linux command list"
 last_modified_at: 2019-06-10
