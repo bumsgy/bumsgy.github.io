@@ -11,12 +11,12 @@ toc: true
 ### 설치 전 확인
 
 1. yum을 이용하여, 설치 가능한 java버전을 조회 해 봅니다.
-``` 
-  yum list java*jdk*
-  
-  // jdk만 보고 싶다면.
-  yum list java*jdk-devel
-```
+     ```unix
+      yum list java*jdk*
+
+      // jdk만 보고 싶다면.
+      yum list java*jdk-devel
+    ```
 
 여기서 
 java-버전-openjdk 패키지가 JRE,
@@ -27,12 +27,12 @@ jdk, 즉 devel은 jdk에 의존성이 있어,
 
 ### 설치 
 1. 설치 가능 목록 중 원하는 버전으로 설치합니다.
-```
-  yum install <원하는 설치 버전>
-```
+    ```unix
+      yum install <원하는 설치 버전>
+    ```
 
 ### 확인
 1. 설치가 잘 되었는지 확인 해 봅니다.
-```
-  java -version
-```
+    ```unix
+      java -version
+    ```
