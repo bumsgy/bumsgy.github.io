@@ -49,6 +49,8 @@ docs:
         url: /docs/centos-Installation/
       - title: "linux-command"
         url: /docs/linux-command/
+      - title: "linux-command"
+        url: /docs/linux-install-java/
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
