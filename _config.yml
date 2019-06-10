@@ -314,12 +314,12 @@ defaults:
       related: true
   # _pages
   # bbeoms
-  # - scope:
-  #     path: ""
-  #     type: pages
-  #   values:
-  #     layout: single
-  #     author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # bbeoms
   # _docs
   - scope:
