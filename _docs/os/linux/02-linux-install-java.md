@@ -1,7 +1,7 @@
 ---
 title: "linux java 설치"
 permalink: /docs/linux-install-java/
-excerpt: "linux command list"
+excerpt: "linux java install "
 last_modified_at: 2019-06-10
 redirect_from:
   - /theme-setup/
