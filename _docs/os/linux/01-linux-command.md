@@ -44,19 +44,23 @@ https://btyy.tistory.com/48
   cd /usr/local/
   ln -s apache-tomcat-8.0.53 tomcat
 ```
-x : -x, --extract, --get       extract files from an archive
-v : -v, --verbose              verbosely list files processed
-z : -z, --gzip, --gunzip, --ungzip   filter the archive through gzip
-f : -f, --file=ARCHIVE         use archive file or device ARCHIVE
+참고로 tar의 경우, 파일명으로 폴더를 생성 후, 해당 폴더 안에 압축을 해제 해 줍니다.
+
+많이 사용하는 옵션들입니다. 
+이 정보들은 tar --help 로 확인하실 수 있습니다.
+x : -x, --extract, --get       extract files from an archive \
+v : -v, --verbose              verbosely list files processed \
+z : -z, --gzip, --gunzip, --ungzip   filter the archive through gzip \
+f : -f, --file=ARCHIVE         use archive file or device ARCHIVE \
 
 4. 삭제
-  삭제 명령어로는 rm을 사용합니다. 
-  가장 많이 사용하는 옵션은 -rf로서,
-  -r 옵션 은 하위디렉토리, 폴더 내 파일이 있을 경우, 같이 삭제합니다.
-  ( 옵션을 안 써준다면, 하위 디렉토리나 파일이 있으면 삭제가 되지 않습니다. )
-  -f 옵션은 삭제 시 확인 과정을 거치지 않습니다. 
-  관리자 계정으로 로그인해서 rm -rf / 를 입력하는 실수는 하지 않도록 주의합니다. 
-  ( 이렇게 하면 모든 데이터가 삭제됩니다. 주의, 또 주의!! )
+  삭제 명령어로는 rm을 사용합니다. \ 
+  가장 많이 사용하는 옵션은 -rf로서, \
+  -r 옵션 은 하위디렉토리, 폴더 내 파일이 있을 경우, 같이 삭제합니다. \ 
+  ( 옵션을 안 써준다면, 하위 디렉토리나 파일이 있으면 삭제가 되지 않습니다. ) \
+  -f 옵션은 삭제 시 확인 과정을 거치지 않습니다.  \
+  관리자 계정으로 로그인해서 rm -rf / 를 입력하는 실수는 하지 않도록 주의합니다.  \
+  ( 이렇게 하면 모든 데이터가 삭제됩니다. 주의, 또 주의!! ) \
 ```bash
   rm -rf <삭제를 원하는 폴더, 또는 파일의 경로>
 ```
