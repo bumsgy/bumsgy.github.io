@@ -18,12 +18,12 @@ toc: true
       yum list java*jdk-devel
     ```
 
-  여기서 
-  java-버전-openjdk 패키지가 JRE,
-  java-버전-openjdk-devel 패키지가 JDK
+  여기서 \\
+  java-버전-openjdk 패키지가 JRE, \\
+  java-버전-openjdk-devel 패키지가 JDK \\
 
-  jdk, 즉 devel은 jdk에 의존성이 있어,
-  설치 시 jdk가 없다면, 먼저 설치하게 된다.
+  jdk, 즉 devel은 jdk에 의존성이 있어, \\
+  설치 시 jdk가 없다면, 먼저 설치하게 된다. \\
 
 2. 설치 가능 목록 중 원하는 버전으로 설치합니다.
     ```bash
@@ -36,7 +36,7 @@ toc: true
     ```
 
 ##### 인터넷이 안 될 경우.
-1. java8의 경우, openJDK가 따로 java를 가지고 있지 않습니다.
-   oracle의 java8 버전을 다운로드 합니다.
-   물론, 인터넷이 안 된다면, 다른 컴퓨터에서 다운로드하여, 복사합니다.
+1. java8의 경우, openJDK가 따로 java를 가지고 있지 않습니다. \\
+   oracle의 java8 버전을 다운로드 합니다. \\
+   물론, 인터넷이 안 된다면, 다른 컴퓨터에서 다운로드하여, 복사합니다. \\ 
 
