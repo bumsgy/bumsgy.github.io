@@ -30,30 +30,30 @@ toc: true
 
 
 ### 공통
-1. 종료
+1. 종료 \\
 ```bash
   shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다.
   shutdown -r now     // 지금 바로 종료 후 재부팅한다.
 ```
-https://btyy.tistory.com/48
+https://btyy.tistory.com/48\\
 
-2. 압축
+2. 압축\\
 
-3. 압축해제 
+3. 압축해제 \\
 ```bash
   tar -xvzf apache-tomcat-8.0.52.tar.gz
   mv apache-tomcat-8.0.53 /usr/local
   cd /usr/local/
   ln -s apache-tomcat-8.0.53 tomcat
 ```
-참고로 tar의 경우, 파일명으로 폴더를 생성 후, 해당 폴더 안에 압축을 해제 해 줍니다.
+참고로 tar의 경우, 파일명으로 폴더를 생성 후, 해당 폴더 안에 압축을 해제 해 줍니다.\\
 
-많이 사용하는 옵션들입니다. 
-이 정보들은 tar --help 로 확인하실 수 있습니다.
-x : -x, --extract, --get       extract files from an archive \
-v : -v, --verbose              verbosely list files processed \
-z : -z, --gzip, --gunzip, --ungzip   filter the archive through gzip \
-f : -f, --file=ARCHIVE         use archive file or device ARCHIVE \
+많이 사용하는 옵션들입니다. \\
+이 정보들은 tar --help 로 확인하실 수 있습니다.\\
+x : -x, --extract, --get       extract files from an archive \\
+v : -v, --verbose              verbosely list files processed \\
+z : -z, --gzip, --gunzip, --ungzip   filter the archive through gzip \\
+f : -f, --file=ARCHIVE         use archive file or device ARCHIVE \\
 
 4. 삭제
   삭제 명령어로는 rm을 사용합니다. \ 
