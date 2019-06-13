@@ -38,6 +38,8 @@ toc: true
 https://btyy.tistory.com/48 \\
 
 2. 압축 \\
+압축은 gzip과 b... 가 있습니다.
+
 
 3. 압축해제 \\
 ```bash
@@ -50,10 +52,12 @@ https://btyy.tistory.com/48 \\
 
 많이 사용하는 옵션들입니다. \\
 이 정보들은 tar --help 로 확인하실 수 있습니다. \\
-x : -x, --extract, --get       extract files from an archive \\
-v : -v, --verbose              verbosely list files processed \\
-z : -z, --gzip, --gunzip, --ungzip   filter the archive through gzip \\
-f : -f, --file=ARCHIVE         use archive file or device ARCHIVE \\
+x : -x, --extract, --get                extract files from an archive : 압축파일로부터 압축을 해제합니다. \\
+v : -v, --verbose                       verbosely list files processed : 진행되는 상황을 화면에 표시합니다 \\
+z : -z, --gzip, --gunzip, --ungzip      filter the archive through gzip : gzip으로 압축해제합니다.  \\
+f : -f, --file=ARCHIVE                  use archive file or device ARCHIVE :  \\
+
+참조 blog[^1]
 
 4. 삭제
   삭제 명령어로는 rm을 사용합니다. \ 
@@ -92,3 +96,9 @@ https://wikidocs.net/3200
 
 그냥 바로 무선 설정을 하고 싶지만, wpa_supplicant 명령어가 있어야 하는데, 
 centos에 이것이 없다. 이를 설치를 해야 무선을 쓸 수 있고, 그러려면 일단 유선을... ;;;
+
+
+
+
+
+[^1]: sample.
