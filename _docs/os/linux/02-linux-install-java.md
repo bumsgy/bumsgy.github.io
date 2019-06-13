@@ -9,7 +9,7 @@ toc: true
 ---
 
 ##### yum을 이용한 설치
-1. 설치 전 확인.
+1. 설치 전 확인. \\
    yum을 이용하여, 설치 가능한 java버전을 조회 해 봅니다.
      ```bash
       yum list java*jdk*
@@ -20,12 +20,12 @@ toc: true
 
   여기서 \\
   java-버전-openjdk 패키지가 JRE, \\
-  java-버전-openjdk-devel 패키지가 JDK \\
+  java-버전-openjdk-devel 패키지가 JDK 
 
   jdk, 즉 devel은 jdk에 의존성이 있어, \\
-  설치 시 jdk가 없다면, 먼저 설치하게 된다. \\
+  설치 시 jdk가 없다면, 먼저 설치하게 된다. 
 
-2. 설치 가능 목록 중 원하는 버전으로 설치합니다.
+2. 설치 가능 목록 중 원하는 버전으로 설치합니다. \\
     ```bash
       yum install <원하는 설치 버전>
     ```
