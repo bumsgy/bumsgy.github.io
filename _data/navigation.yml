@@ -46,11 +46,11 @@ docs:
   - title: Unix
     children:
       - title: "Centos installation"
-        url: /docs/centos-Installation/
+        url: /docs/os/linux/linux-command/
       - title: "linux-command"
-        url: /docs/linux-command/
+        url: /docs/os/linux/linux-command/
       - title: "linux-java-install"
-        url: /docs/linux-install-java/
+        url: /docs/os/linux/linux-install-java/
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
