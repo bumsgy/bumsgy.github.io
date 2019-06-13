@@ -9,9 +9,14 @@ toc: true
 ---
 
 ### DEV 관련
-1. MAVEN Repository \\
+* Maven \\
+    [Maven 다운로드 페이지입니다.](https://maven.apache.org/download.cgi) \\
+
+* MAVEN Repository \\
     maven, gradle 등에서 라이브러리들을 다운로드 받을 수 있는 저장소입니다. \\
     [Maven Repository](https://mvnrepository.com/)
+
+
 
 
 ### TOOLS
