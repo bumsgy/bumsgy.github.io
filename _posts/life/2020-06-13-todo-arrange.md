@@ -24,5 +24,9 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
    인터넷이 안 되는 것을 상정. 또는 yum list에 없는 것으로 생각해서 \\
    파일을 먼저 다운로드 한 후, 인터넷을 통한 것이 아닌 해당 파일을 이용해서 설치하는 방법 
 
-2. 
+2. windows, linux 모두 환경 변수 설정 방법
 
+3. tomcat 환경 설정
+   : appbase, docbase 
+   : jndi
+   : 하나의 tomcat에 여러 개의 인스턴스
