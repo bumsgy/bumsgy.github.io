@@ -13,33 +13,33 @@ toc: true
 1. 종류 \\
    리눅스는 여러 종류의 리눅스가 있습니다. \\
    리눅스 자체가 opensource이다 보니, 여러 기업에서 이를 이용하여, 자신들의 리눅스를 만들어 제공한 거죠. \\
-   Ubuntu, Fedora, Centos 등등이 있습니다. \\
+   Ubuntu, Fedora, Centos 등등이 있습니다.
 
 2. 계열 \\
    또한, 계열이 있는데, 이를 알고 있어야 편합니다. \\
    몇몇 명령어가 다르기 때문이죠. \\
    크게 Debian 계열, RedHat 계열로 구분합니다. \\
    Debian 계열에는 대표적으로 Ubuntu가 있습니다. \\
-   RedHat 계열에는 Centos, Fedora 등이 있습니다. \\
+   RedHat 계열에는 Centos, Fedora 등이 있습니다.
 
    debian 계열에서는 설치 시 apt-get을 사용하고, \\
-   RedHat 계열에서는 yum을 사용합니다. \\
+   RedHat 계열에서는 yum을 사용합니다.
 
 3. 파일 또는 폴더의 경로 입력 시, 맨 앞에 /를 입력한다면 root부터의 경로로 인식합니다. \\
-   /부터 시작하지 않으면, 현재 위치부터 상대 경로로 인식합니다. \\
+   /부터 시작하지 않으면, 현재 위치부터 상대 경로로 인식합니다.
 
 
 ### 공통
+
 1. 종료 \\
 ```bash
   shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다.
   shutdown -r now     // 지금 바로 종료 후 재부팅한다.
 ```
-https://btyy.tistory.com/48 \\
+https://btyy.tistory.com/48
 
 2. 압축 \\
-압축은 gzip과 b... 가 있습니다.
-
+  압축은 gzip과 b... 가 있습니다.
 
 3. 압축해제 \\
 ```bash
