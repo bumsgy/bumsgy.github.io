@@ -32,11 +32,11 @@ toc: true
 ### 공통
 
 1. 종료 \\
-```bash
-  shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다.
-  shutdown -r now     // 지금 바로 종료 후 재부팅한다.
-```
-https://btyy.tistory.com/48
+    ```bash
+    shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다.
+    shutdown -r now     // 지금 바로 종료 후 재부팅한다.
+    ```
+    https://btyy.tistory.com/48
 
 2. 압축 \\
   압축은 gzip과 b... 가 있습니다.
