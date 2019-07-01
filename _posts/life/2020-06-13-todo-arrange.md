@@ -30,3 +30,14 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
    : appbase, docbase 
    : jndi
    : 하나의 tomcat에 여러 개의 인스턴스
+
+
+4. javascript
+   : 배열에 추가하기 전에 값이 먼저 있는지 확인( 중복 체크 )
+     --> indexOf를 쓰기도 하지만, 중복 체크 key가 여러개인 경우에는? (( 문자열 합치기를 하거나 하는 방법도 있지만... 그냥은 안 됨 ??? ))
+
+5. vue..
+   : v-for:key로 등록되어 있다면, 알아서 해당 배열에 중복 건은 제거 해 준다.
+
+   : data object에 push를 할 때 중복체크를 해 주는가? 해 준다면 어느 기준으로? 
+   : array의 push는 swallow(얕은) 복사인가? 
