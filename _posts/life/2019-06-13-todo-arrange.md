@@ -41,3 +41,30 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 
    : data object에 push를 할 때 중복체크를 해 주는가? 해 준다면 어느 기준으로? 
    : array의 push는 swallow(얕은) 복사인가? 
+
+
+
+const a = [
+     {"akey":"aa1",
+      "bkey":"bb1",
+      "ckey":"cc1",
+     },
+     {"akey":"aa2",
+      "bkey":"bb2",
+      "ckey":"cc2",
+     },
+     {"akey":"aa3",
+      "bkey":"bb3",
+      "ckey":"cc3",
+     },
+];
+let b= [];
+
+a.forEach(el => {
+     b.push(el);
+});
+
+b[2].akey="bbbb";
+
+// 데이터는 중복에 처리는 안 되겠지.
+// 중복 시 v-for가.. key로 사용하는 값이 2개가 되어 버리니, 거기에 에러를 뱉어내는 것.
