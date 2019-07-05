@@ -15,6 +15,7 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 swagger2를 gradle로 import 해서 셋팅을 하려는데...
 <details>
 <summary>접기/펼치기</summary>
+
 ```java
     @Bean
     public Docket api() {
