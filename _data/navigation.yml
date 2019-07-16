@@ -1,38 +1,39 @@
+# example navigation
+foo:
+  - title: "Parent Link 1"
+    url: /parent-1-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+  - title: "Parent Link 2"
+    url: /parent-2-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+      - title: "Child Link 3"
+        url: /child-3-page-url/
+
+
 # main links
-main: 
-  - title: "about"
+main:
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start-guide/
+  - title: "About"
     url: /about/
-  - title: "linux"
-    url: /docs/os/linux/linux-command/
-  - title: "windows"
+  - title: "Sample Posts"
     url: /year-archive/
-  - title: "devOps"
-    url: /collection-archive1/
-  - title: "Sample Col23lections"
-    url: /collection-archive2/
-  - title: "Sample Collㅇㅇections"
-    url: /collection-archive3/
-  - title: "Sample Collectiㅍㅁㅇㅁons"
-    url: /collection-archive4/
-  - title: "Sample Collectiㅁㄴons"
-    url: /collection-archive5/
+  - title: "Sample Collections"
+    url: /collection-archive/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
 
+
 # documentation links
 docs:
-  - title: Unix
-    children:
-      - title: "Centos installation"
-        url: /docs/os/linux/linux-command/
-      - title: "linux-command"
-        url: /docs/os/linux/linux-command/
-      - title: "linux-java-install"
-        url: /docs/os/linux/linux-install-java/
-  - title: ETC
-    children:
-      - title: "URL Summary"
-        url: /docs/URL-arrange/
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
