@@ -1,5 +1,5 @@
 # example navigation
-foo:
+foo: 
   - title: "Parent Link 1"
     url: /parent-1-page-url/
     children:
@@ -20,7 +20,7 @@ foo:
 
 # main links
 # sub manu is not working 
-main:
+main: 
   - title: "About"
     url: /about/
   - title: "linux 관련"
