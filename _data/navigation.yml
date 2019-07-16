@@ -21,11 +21,11 @@ foo:
 # main links
 # sub manu is not working 
 main: 
-  - title: "About"
+  - title: "about"
     url: /about/
-  - title: "linux 관련"
+  - title: "linux"
     url: /docs/os/linux/linux-command/
-  - title: "windows 관련"
+  - title: "windows"
     url: /year-archive/
   - title: "devOps"
     url: /collection-archive1/
