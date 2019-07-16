@@ -21,13 +21,13 @@ foo:
 # main links
 # sub manu is not working 
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
   - title: "About"
     url: /about/
-  - title: "Sample Posts"
+  - title: "linux 관련"
+    url: /docs/os/linux/linux-command/
+  - title: "windows 관련"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "devOps"
     url: /collection-archive1/
   - title: "Sample Col23lections"
     url: /collection-archive2/
