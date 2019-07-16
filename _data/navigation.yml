@@ -1,33 +1,12 @@
-# example navigation
-foo:
-  - title: "Parent Link 1"
-    url: /parent-1-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-  - title: "Parent Link 2"
-    url: /parent-2-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-      - title: "Child Link 3"
-        url: /child-3-page-url/
-
-
 # main links
-# sub manu is not working 
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "About"
+  - title: "about"
     url: /about/
-  - title: "Sample Posts"
+  - title: "linux"
+    url: /docs/os/linux/linux-command/
+  - title: "windows"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "devOps"
     url: /collection-archive1/
   - title: "Sample Col23lections"
     url: /collection-archive2/
@@ -39,7 +18,6 @@ main:
     url: /collection-archive5/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
-
 
 # documentation links
 docs:
