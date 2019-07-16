@@ -103,3 +103,17 @@ centos에 이것이 없다. 이를 설치를 해야 무선을 쓸 수 있고, �
 
 
 [^1]: sample.
+
+
+
+
+/*
+branch는 master에서 시작
+
+git remote add upstream https://github.com/mmistakes/minimal-mistakes.git
+
+git fetch upstream
+
+git merge upstream/master
+
+*/
