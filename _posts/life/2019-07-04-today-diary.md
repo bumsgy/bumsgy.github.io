@@ -43,4 +43,3 @@ dependecies 내용 모두 주석처리하면 만사OK가 될 줄 알았건만 �
 ### spring boot에 logback 적용 .
 	logback.xml 같이 환경 설정 파일을 만들때 logback이라고만 쓰면 안 되는듯.
 	logback-dev.xml 등등으로 생성해야 정상적으로 load
-	dff
