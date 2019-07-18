@@ -23,7 +23,10 @@ toc: true
    RedHat 계열에는 Centos, Fedora 등이 있습니다.
 
    debian 계열에서는 설치 시 apt-get을 사용하고, \\
-   RedHat 계열에서는 yum을 사용합니다.
+   RedHat 계열에서는 rpm(RedHat Package Manager) 또는 yum(Yellowdog Update Modified)을 사용합니다. \\
+   둘 다 패키지 관리자로서는 동일하지만, \\
+   rpm은 설치 시 의존성 문제가 발생 할 수 있으며, 이를 해결 한 것이 yum입니다. 
+   
 
 3. 파일 또는 폴더의 경로 입력 시, 맨 앞에 /를 입력한다면 root부터의 경로로 인식합니다. \\
    /부터 시작하지 않으면, 현재 위치부터 상대 경로로 인식합니다.
