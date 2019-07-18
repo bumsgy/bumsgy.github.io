@@ -37,10 +37,9 @@ toc: true
 1. 종료 \\
     https://btyy.tistory.com/48 \\
     ```bash
-    shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다.
+    shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다. now 대신 0을 해도 됩니다.
     shutdown -r now     // 지금 바로 종료 후 재부팅한다.
     ```
-
 
 2. 압축 \\
   압축은 gzip과 b... 가 있습니다.
@@ -78,6 +77,18 @@ f : -f, --file=ARCHIVE                  use archive file or device ARCHIVE :  \\
 5. 이동, 파일 & 폴더명 변경
 
 
+6. 버젼 확인 
+```bash
+  cat /etc/*-release
+  grep . /etc/*-release
+```
+
+7. 현재 계정 확인
+```bash
+  cat /etc/passwd
+```
+
+
 ### centos
 
 
@@ -87,11 +98,16 @@ f : -f, --file=ARCHIVE                  use archive file or device ARCHIVE :  \\
 
 2. 유선 또는 무선 인터넷 사용
 ```
-  ifconfig <interface명> up     // 인터페이스를 작동시킨다.
+  ifconfig <interface명> up     // 인터페이스를 작동시킵니다.
   또는,
-  ip link set dev <interface명> up      // 인터페이스를 작동시킨다.  중간의 dev는 어떤 역할인지 확인 필요
+  ip link set dev <interface명> up      // 인터페이스를 작동시킵니다.  중간의 dev는 어떤 역할인지 확인 필요
 
   ifconfig <interface명>  // 해당 interface명에 대한 정보만 표시.
+
+  centos 7.x 대. 최소 설치 시 ifconfig는 되지 않습니다. 대신 if 명령어를 사용하면 됩니다.
+
+  // TODO
+  버젼의 차이인지, 최소 설치 때문인지는 확인 해 봐야 합니다.
 ```
 
 https://blog.work6.kr/60

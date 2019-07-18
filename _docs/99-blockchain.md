@@ -107,8 +107,17 @@ reload
 ### centos 6 여서 다시 7 설치
 최소 설치.
 
+
+
+
 인터넷 활성화
-> ifup {{랜카드ID}}
+> ifup {랜카드ID}
+https://devhoma.tistory.com/101
+
+
+: epel 정보
+http://faq.hostway.co.kr/Linux_ETC/7095
+
 
 > yum update
 
@@ -117,9 +126,12 @@ reload
 : 여전히 nodejs 버젼은... 1.x 대... ㄷㄷㄷ
 
 > yum install -y gcc-c++ make
+> curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 
 > yum repolist 
 : repo로 추가된 것이 확인
+
+> yum install nodejs
 
 > yum install golang
 
@@ -133,6 +145,10 @@ reload
 > yum install docker-compose
 : docker-compose는 서비스가 아니네? ... 아닌게 맞...지? 흠흐..
 
+> go get -u github.com/hyperledger/fabric-sdk-node
 
+> go get -u github.com/hyperledger/fabric-samples
+
+> go get -u github.com/hyperledger/fabric
 
 
