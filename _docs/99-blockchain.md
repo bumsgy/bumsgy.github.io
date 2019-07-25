@@ -104,6 +104,8 @@ reload
 
 
 
+
+
 ### centos 6 여서 다시 7 설치
 최소 설치.
 
@@ -133,6 +135,12 @@ http://faq.hostway.co.kr/Linux_ETC/7095
 
 > yum install nodejs
 
+> node -v
+> npm -v
+
+: nvm 설치
+> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
 > yum install golang
 
 이하 env 등록 다시.
@@ -141,6 +149,8 @@ http://faq.hostway.co.kr/Linux_ETC/7095
 > yum install docker 
 
 > systemctl status docker
+> systemctl enable docker
+
 
 > yum install docker-compose
 : docker-compose는 서비스가 아니네? ... 아닌게 맞...지? 흠흐..
@@ -151,4 +161,30 @@ http://faq.hostway.co.kr/Linux_ETC/7095
 
 > go get -u github.com/hyperledger/fabric
 
+
+
+
+> firewall-cmd --zone=public --add-port=5984/tcp --permanent
+firewall-cmd --zone=public --add-port=7050/tcp --permanent
+firewall-cmd --zone=public --add-port=7051/tcp --permanent
+firewall-cmd --zone=public --add-port=7054/tcp --permanent
+firewall-cmd --zone=public --add-port=8051/tcp --permanent
+
+firewall-cmd --zone=public --add-port=4000/tcp --permanent
+
+
+
+cd ~~~~~/hyperledger/fabric 
+make native
+: 해 주면 .build 등의 폴더가 생성. --> 이 아니네?
+: 맞아!! 맞아!!! ㅋㅋ
+
+
+
+
+
+
+
+/// 
+secureCrt
 

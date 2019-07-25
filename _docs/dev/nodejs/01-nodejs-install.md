@@ -18,3 +18,8 @@ description : nodejs 설치
     s.cp('-p', 'examples'); // 이렇게 사용하면 됩니다.
 
 ```
+
+
+
+https://tom7930.tistory.com/27
+listen EADDRINUSE :::4000
