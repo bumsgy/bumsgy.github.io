@@ -10,7 +10,9 @@ toc: true
 
 
 ### 블로그 테마는? 
-https://mmistakes.github.io 테마를 적용하고 있습니다.
+https://mmistakes.github.io 테마를 적용하고 있습니다. 
+
+
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
 {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}

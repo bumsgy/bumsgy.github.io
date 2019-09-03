@@ -114,7 +114,14 @@ reload
 
 인터넷 활성화
 > ifup {랜카드ID}
-https://devhoma.tistory.com/101
+https://devhoma.tistorcy.com/101
+
+]# cd /etc/sysconfig/network-scripts
+
+vi ifcfg-<network명>
+
+ONBOOT항목을 yes로
+
 
 
 : epel 정보
@@ -126,6 +133,9 @@ http://faq.hostway.co.kr/Linux_ETC/7095
 > yum install epel-release
 > yum list | grep nodejs
 : 여전히 nodejs 버젼은... 1.x 대... ㄷㄷㄷ
+
+
+2019.07.29 : epel은 일단 대기... golang 말고는 node나 docker나 epel로 설치를 안 하니..
 
 > yum install -y gcc-c++ make
 > curl -sL https://rpm.nodesource.com/setup_8.x | bash -
@@ -156,7 +166,7 @@ http://faq.hostway.co.kr/Linux_ETC/7095
 : docker-compose는 서비스가 아니네? ... 아닌게 맞...지? 흠흐..
 
 > go get -u github.com/hyperledger/fabric-sdk-node
-
+rrrrrrrr
 > go get -u github.com/hyperledger/fabric-samples
 
 > go get -u github.com/hyperledger/fabric
@@ -172,6 +182,13 @@ firewall-cmd --zone=public --add-port=8051/tcp --permanent
 
 firewall-cmd --zone=public --add-port=4000/tcp --permanent
 
+firewall-cmd --reload
+
+
+firewall-cmd --zone=public --remove-port=5432/tcp --permanent
+
+firewall-cmd --permanent --zone=public --add-rich-rule="rule family="ipv4" port protocol="tcp" port="5432" accept"
+
 
 
 cd ~~~~~/hyperledger/fabric 
@@ -185,6 +202,83 @@ make native
 
 
 
-/// 
-secureCrt
+
+
+
+
+####
+20190729
+
+$ yum repolist
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.kakao.com
+ * epel: mirror.xeonbd.com
+ * extras: mirror.kakao.com
+ * updates: mirror.kakao.com
+repo id               repo name                                                   status
+!base/7/x86_64        CentOS-7 - Base                                             10,019
+!epel/x86_64          Extra Packages for Enterprise Linux 7 - x86_64              13,327
+!extras/7/x86_64      CentOS-7 - Extras                                           419
+!nodesource/x86_64    Node.js Packages for Enterprise Linux 7 - x86_64            110
+!updates/7/x86_64     CentOS-7 - Updates                                          2,303
+
+repolist: 26,178
+
+
+$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+$ yum repolist
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.kakao.com
+ * epel: fedora.cs.nctu.edu.tw
+ * extras: mirror.kakao.com
+ * updates: mirror.kakao.com
+docker-ce-stable                                     | 3.5 kB  00:00:00     
+(1/2): docker-ce-stable/x86_64/updateinfo            |   55 B  00:00:00     
+(2/2): docker-ce-stable/x86_64/primary_db            |  32 kB  00:00:00     
+
+repo id                   repo name                                                   status
+base/7/x86_64             CentOS-7 - Base                                             10,019
+docker-ce-stable/x86_64   Docker CE Stable - x86_64                                   52
+epel/x86_64               Extra Packages for Enterprise Linux 7 - x86_64              13,328
+extras/7/x86_64           CentOS-7 - Extras                                           419
+nodesource/x86_64         Node.js Packages for Enterprise Linux 7 - x86_64            110
+updates/7/x86_64          CentOS-7 - Updates                                          2,303
+repolist: 26,231
+
+::: docker-ce repo가 추가됨.
+
+$ sudo yum install docker-ce docker-ce-cli containerd.io
+
+$ sudo systemctl start docker
+
+$ sudo systemctl enable docker
+
+
+
+
+
+
+
+GOPATH="/home/fabric/go"
+GOROOT="/usr/local/go"
+
+
+
+
+
+sudo yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm
+
+sudo yum install git 
+
+
+
+
+
+
+
 
