@@ -68,13 +68,13 @@ toc: true
   참조 blog[^1]
 
 4. 삭제 \\
-  삭제 명령어로는 rm을 사용합니다. \\
-  가장 많이 사용하는 옵션은 -rf로서, \\
-  -r 옵션 은 하위디렉토리, 폴더 내 파일이 있을 경우, 같이 삭제합니다. \\
-  ( 옵션을 안 써준다면, 하위 디렉토리나 파일이 있으면 삭제가 되지 않습니다. ) \\
-  -f 옵션은 삭제 시 확인 과정을 거치지 않습니다.  \\
-  관리자 계정으로 로그인해서 rm -rf / 를 입력하는 실수는 하지 않도록 주의합니다.  \\
-  ( 이렇게 하면 모든 데이터가 삭제됩니다. 주의, 또 주의!! )
+   삭제 명령어로는 rm을 사용합니다. \\
+   가장 많이 사용하는 옵션은 -rf로서, \\
+   -r 옵션 은 하위디렉토리, 폴더 내 파일이 있을 경우, 같이 삭제합니다. \\
+   ( 옵션을 안 써준다면, 하위 디렉토리나 파일이 있으면 삭제가 되지 않습니다. ) \\
+   -f 옵션은 삭제 시 확인 과정을 거치지 않습니다.  \\
+   관리자 계정으로 로그인해서 rm -rf / 를 입력하는 실수는 하지 않도록 주의합니다.  \\
+   ( 이렇게 하면 모든 데이터가 삭제됩니다. 주의, 또 주의!! )
 
     ```bash
       rm -rf <삭제를 원하는 폴더, 또는 파일의 경로>
@@ -240,76 +240,3 @@ cryptogen generate --config=./crypto-config.yaml
 
 
 
-
-###############
-# 여기부터가 
-
-## fabric 계정을 설치 시 같이 생성.
-## admin 권한 소유.
-
-# fabric 
-sudo yum update
-
-sudo yum install vim
-
-# root
-# sudo 권한을 부여 해 주기 위함.
-chmod u+w /etc/sudoers
-
-# 모든 유저에서 권한 부여
-%wheel        ALL=(ALL)       NOPASSWD: ALL
-
-:::: 이거 sudo 안 됨. 어디서 된다는거지? ㅡㅡ;;; 계속 sudo 요구.
-
-
-yum install epel-release
-
-sudo -s yum install golang
-
-
-vi .bashrc
-GOPATH="/home/fabric/go"
-GOROOT="/usr/lib/golang"
-
-source ~/.bashrc
-
-sudo yum install -y gcc-c++ make
-
-
-# root 권한에서 ... 이거는 fabric 에서 안 되네? sudo 해도 안 됨.
-curl -sL https://rpm.nodesource.com/setup_8.x | bash -
-
-sudo yum install nodejs
-
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-
-nvm은 로그아웃 후 다시 들어올 것.
-
-sudo yum install docker 
-
-sudo systemctl start docker
-sudo systemctl enable docker
-
-sudo yum install docker-compose
-
-newgrp - docker // 이걸로 어찌 되는 건지는 좀 더 확인해 봐야 할 듯.
-
-
-
-
-tar -xvzf go1.12.7.linux-amd64.tar.gz
-  mv go /usr/local
-  cd /usr/local/
-  ln -s apache-tomcat-8.0.53 tomcat
-
-
-
-
-
-
-
-# 권한
-해당 폴더에 접근하고 싶다면? 
-cd 폴더명을 쓸텐데, r 이면 될 듯하지만..
-x 권한이 있어야 함.
-해당 폴더에서 ls를 하려면 r 이 필요한것.

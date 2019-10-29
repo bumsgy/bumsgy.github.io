@@ -43,3 +43,10 @@ toc: true
 
 2. 
 
+
+
+
+
+GA : General-Availability Release
+
+https://jdk.java.net/archive/

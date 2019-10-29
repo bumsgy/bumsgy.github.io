@@ -18,13 +18,6 @@ dockerp-compose에서 depends on은 파일을 확장 할 수 없다.
 
 
 
-docker-compose 
-expected <block end>, but found '?'
-
-indent가 2space. 4space면 해당 에러.
-
-
-
 ----
 TLS 설정은 CA, orderer, org 에...
 peer는 없네?

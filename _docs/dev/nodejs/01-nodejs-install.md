@@ -17,9 +17,25 @@ description : nodejs 설치
     const s = require('shelljs');
     s.cp('-p', 'examples'); // 이렇게 사용하면 됩니다.
 
-```
+
+
 
 
 
 https://tom7930.tistory.com/27
 listen EADDRINUSE :::4000
+
+
+
+
+
+--save를 옵션으로 적으면 dependencies로 들어간다.
+```
+
+
+
+
+
+
+
+

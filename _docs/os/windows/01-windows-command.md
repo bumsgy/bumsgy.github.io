@@ -35,7 +35,7 @@ toc: true
     https://btyy.tistory.com/48
     
     ```bash
-    shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다.
+    shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다. 
     shutdown -r now     // 지금 바로 종료 후 재부팅한다.
     ```
 
