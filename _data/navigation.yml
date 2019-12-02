@@ -2,10 +2,12 @@
 main:
   - title: 'about'
     url: /about/
-  - title: 'linux'
-    url: /docs/os/linux/linux-command/
-  - title: 'windows'
-    url: /year-archive/
+  - title: 'OS'
+    url: /os/windows/overview/
+  - title: 'tools'
+    url: /tools/intellij/intellij-first/
+#  - title: 'windows'
+#    url: /year-archive/    
   - title: 'devOps'
     url: /collection-archive1/
   - title: 'Hyperledger Fabric'
@@ -89,6 +91,30 @@ docs:
         url: /docs/license/
       - title: 'Terms &amp; Privacy Policy'
         url: /terms/
+
+os:
+  - title: linux
+    children:
+      - title: 'linux overview'
+        url: /windows/os/over/
+      - title: 'linux-command'
+        url: /docs/os/linux/linux-command/
+      - title: 'linux-java-install'
+        url: /docs/os/linux/linux-install-java/
+  - title: windows
+    children:
+      - title: 'windows overview'
+        url: /windows/os/over/
+      - title: 'windows-command'
+        url: /os/windows/command/
+      - title: 'linux-java-install'
+        url: /os/linux/linux-install-java/
+
+tools:
+  - title: intellij
+    children:
+      - title: 'intellij'
+        url: /tools/intellij/intellij-first/
 
 # sidebar navigation list sample
 sidebar-sample:

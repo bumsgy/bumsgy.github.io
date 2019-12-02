@@ -153,7 +153,7 @@ fabric chaincode는 go언어로 작성됩니다. 물론, java, nodejs 등으로�
 
    ```bash
    // 저장소를 먼저 설치합니다.
-   $ yum install epel-release
+   $ sudo yum install epel-release
    ```
 
 2. golang을 설치합니다.
@@ -167,13 +167,16 @@ fabric chaincode는 go언어로 작성됩니다. 물론, java, nodejs 등으로�
 3. 경로 정보를 등록 해 줍니다.
 
    경로를 추가했다면, 현재 계정을 로그아웃했다가 다시 로그인해야 적용이 됩니다. 또는, source 명령어를 이용하는 방법도 있습니다.
+   경로는 go lang 환경변수를 참조하여 설정합니다.
 
    ```bash
+   $ go env
+   
    $ vi .bashrc
    
    // 내용
-   GOPATH="/home/fabric/go"
-   GOROOT="/usr/lib/golang"
+   export GOPATH="/home/fabric/go"
+   export GOROOT="/usr/lib/golang"
 
    // 로그아웃 후 로그인
 
@@ -198,6 +201,8 @@ docker 또한 epel 저장소 등을 이용하게 되면 낮은 버전의 docker�
       $ sudo systemctl enable docker
 
       $ sudo yum install docker-compose
+
+      $ sudo usermod -aG docker $USER
    ```
 
 

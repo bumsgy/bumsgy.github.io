@@ -16,7 +16,8 @@ toc: true
     maven, gradle 등에서 라이브러리들을 다운로드 받을 수 있는 저장소입니다. \\
     [Maven Repository](https://mvnrepository.com/) ([새창](https://mvnrepository.com/){: target="_blank"})
 
-* 
+* java \\
+    https://openjdk.java.net/
 
 
 ### TOOLS 

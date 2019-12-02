@@ -22,7 +22,7 @@ toc: true
 > yum update ... 를 했어야 했는데...
 
 > yum install nodejs
-
+                
 > node -v 
  : 확인 해 보니... 0.x 버젼? 경악!!
  : 이리 설치하면 안 된다고 하네.. ㅡㅡ
@@ -108,7 +108,6 @@ reload
 
 ### centos 6 여서 다시 7 설치
 최소 설치.
-
 
 
 

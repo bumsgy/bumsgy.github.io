@@ -1,6 +1,6 @@
 ---
 title: "윈도우 포트 확인 및 포트 개방"
-permalink: /docs/os/windows/port/
+permalink: /os/windows/port/
 excerpt: "linux command list"     
 last_modified_at: 2019-06-21T09:00:00+09:00
 redirect_from:

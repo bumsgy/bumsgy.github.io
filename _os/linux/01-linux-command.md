@@ -1,6 +1,6 @@
 ---
 title: "linux 계열 명령어 정리"
-permalink: /docs/os/linux/linux-command/
+permalink: /os/linux/linux-command/
 excerpt: "linux command list"
 last_modified_at: 2019-07-18T15:53:52-04:00
 redirect_from:
