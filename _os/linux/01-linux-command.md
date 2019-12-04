@@ -20,7 +20,10 @@ toc: true
    몇몇 명령어가 다르기 때문이죠. \\
    크게 Debian 계열, RedHat 계열로 구분합니다. \\
    Debian 계열에는 대표적으로 Ubuntu가 있습니다. \\
-   RedHat 계열에는 Centos, Fedora 등이 있습니다.
+   RedHat 계열에는 Centos, Fedora 등이 있습니다. \\
+   Redhat 계열에 OS 조회하는 명령어를 치면, rhel라고 적히는데, 이는 Red Hat Enterprise Linux의 줄임말입니다. \\ 
+   참조 https://www.lesstif.com/pages/viewpage.action?pageId=20775405
+
 
    debian 계열에서는 설치 시 apt-get을 사용하고, \\
    RedHat 계열에서는 rpm(RedHat Package Manager) 또는 yum(Yellowdog Update Modified)을 사용합니다. \\
@@ -239,4 +242,4 @@ cryptogen generate --config=./crypto-config.yaml
 
 
 
-
+운영체제 정보 관련 : http://blog.naver.com/PostView.nhn?blogId=choigohot&logNo=40193643022 
