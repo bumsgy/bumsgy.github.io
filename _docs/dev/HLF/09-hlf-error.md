@@ -1715,7 +1715,7 @@ go test
 (node:16299) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
 -----------------------------------------------------------
 
-에러 상태에서 계속 실행 해 보면, 메세지가  더 길어지는 것이 화긴 됨.
+에러 상태에서 계속 실행 해 보면, 메세지가  더 길어지는 것이 확인 됨.
 -----------------------------------------------------------
 [2019-10-02 11:53:46.189] [ERROR] Transaction - invoke chaincode proposal was bad
 [2019-10-02 11:53:46.190] [ERROR] Transaction - [{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:7051","name":"peer0.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer0.org1.nmplus.com","grpc.ssl_target_name_override":"peer0.org1.nmplus.com","grpc.default_authority":"peer0.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:8051","name":"peer1.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer1.org1.nmplus.com","grpc.ssl_target_name_override":"peer1.org1.nmplus.com","grpc.default_authority":"peer1.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:9051","name":"peer2.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer2.org1.nmplus.com","grpc.ssl_target_name_override":"peer2.org1.nmplus.com","grpc.default_authority":"peer2.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:10051","name":"peer3.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer3.org1.nmplus.com","grpc.ssl_target_name_override":"peer3.org1.nmplus.com","grpc.default_authority":"peer3.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:11051","name":"peer4.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer4.org1.nmplus.com","grpc.ssl_target_name_override":"peer4.org1.nmplus.com","grpc.default_authority":"peer4.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:12051","name":"peer5.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer5.org1.nmplus.com","grpc.ssl_target_name_override":"peer5.org1.nmplus.com","grpc.default_authority":"peer5.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:13051","name":"peer6.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer6.org1.nmplus.com","grpc.ssl_target_name_override":"peer6.org1.nmplus.com","grpc.default_authority":"peer6.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:14051","name":"peer7.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer7.org1.nmplus.com","grpc.ssl_target_name_override":"peer7.org1.nmplus.com","grpc.default_authority":"peer7.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:15051","name":"peer8.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer8.org1.nmplus.com","grpc.ssl_target_name_override":"peer8.org1.nmplus.com","grpc.default_authority":"peer8.org1.nmplus.com"}},"isProposalResponse":true},{"status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpcs://localhost:16051","name":"peer9.org1.nmplus.com","options":{"grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1,"grpc.keepalive_time_ms":120000,"grpc.http2.min_time_between_pings_ms":120000,"grpc.keepalive_timeout_ms":20000,"grpc.http2.max_pings_without_data":0,"grpc.keepalive_permit_without_calls":1,"name":"peer9.org1.nmplus.com","grpc.ssl_target_name_override":"peer9.org1.nmplus.com","grpc.default_authority":"peer9.org1.nmplus.com"}},"isProposalResponse":true}]
@@ -2293,4 +2293,29 @@ dup 체크 변수와 for문을 이용하여, dup일 경우에는
 -----------------------------------------------------------
 테스트 결과 정상적으로 진행됨.
 중복 될 경우에는 저장하지 않음.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

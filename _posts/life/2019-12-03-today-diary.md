@@ -19,6 +19,7 @@ EC2 인스턴스를 늘리지 않는 한 과금은 동일한거 같고, \\
 
 https://niceman.tistory.com/60
 https://puttico.tistory.com/150
+https://sarc.io/index.php/mariadb/346-innodb-myisam
 
 
 ### RDS DB 백업

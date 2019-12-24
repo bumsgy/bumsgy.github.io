@@ -10,9 +10,26 @@ toc: true
 
 ### 
 
+0. docker exec -it {container_id} /bin/bash
+
 1. postgres로 유저 변경
    ``` bash
-   $ su - postgres
+   root$ su - postgres
    ```
 
-2. psql -c "CREATE DATABASE mapjoy-server OWNER kepri ENCODING 'utf-8';"
+2. 
+   ``` 
+   postgres$ psql -c "CREATE DATABASE mapjoyserver OWNER kepri ENCODING 'utf-8';"
+   ```
+
+
+
+3. 
+   ```bash 
+   postgres$ psql -d mapjoyserver -f mapjoyserver_DDL.sql
+   ```
+
+
+
+
+   /mapjoy/service/2/mms
