@@ -1,7 +1,7 @@
 ---
 title: 자아~ 백업받고 RDS를 일단 닫자~
 date: 2019-12-03
-last_modified_at: 2019-12-02T13:00:00+09:00
+last_modified_at: 2019-12-03T13:00:00+09:00
 tags: ["diary", "glogen", "dev"]
 category : ["diary", "glogen", "dev"]
 description : 하으... 사람이 안 들어오네...
@@ -15,10 +15,10 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 그래서 꼭 RDS를 사용해야 하나 해서 검색을 해 보니... 그렇지 않네요. \\
 EC2 인스턴스를 늘리지 않는 한 과금은 동일한거 같고, \\
 그렇다면, 현재 상황에서는 EC2 하나에 DB도 설치해서 그냥 같이 사용하는 것이 \\
-더 효율적으로 판단되었습니다. (( 차피 들어오는 사람도 없는데 머... OTL )) \\
+더 효율적으로 판단되었습니다. (( 차피 들어오는 사람도 없는데 머... OTL ))
 
-https://niceman.tistory.com/60
-https://puttico.tistory.com/150
+https://niceman.tistory.com/60 \\
+https://puttico.tistory.com/150 \\
 https://sarc.io/index.php/mariadb/346-innodb-myisam
 
 
@@ -222,6 +222,13 @@ test 테이블 삭제 여부 \\
 톰캣에서 정상적으로 동작하네요. \\
 이로써, RDS에서 EC2로 DB 옮기기 완료~ \\
 
+
+
+
+
+
+
+여기서부터는 참고 자료인데, 정리 예정입니다. 
 
 https://downloads.mariadb.org/mariadb/repositories/#distro=CentOS&distro_release=centos6-amd64--centos6&mirror=guzel&version=10.2
 
