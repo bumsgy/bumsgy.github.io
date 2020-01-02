@@ -3,7 +3,7 @@ title: 허....탈...
 date: 2019-07-04
 last_modified_at: 2019-07-04T13:00:00+09:00
 tags: ["diary", "springboot", "dev"]
-category : ["diary", "springboot", "dev"]
+category : ["2019", "07"]
 description : 나 혼자 삽질하는것만 해도 힘든데...
 toc: true
 toc_label: ""

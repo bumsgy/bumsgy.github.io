@@ -3,7 +3,7 @@ title: 자아~ 백업받고 RDS를 일단 닫자~
 date: 2019-12-03
 last_modified_at: 2019-12-03T13:00:00+09:00
 tags: ["diary", "glogen", "dev"]
-category : ["diary", "glogen", "dev"]
+category : ["2019", "12"]
 description : 하으... 사람이 안 들어오네...
 toc: true
 toc_label: ""

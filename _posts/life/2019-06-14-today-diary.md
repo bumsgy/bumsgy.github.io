@@ -3,7 +3,7 @@ title: 오늘의 삽질일기
 date: 2019-06-13
 last_modified_at: 2019-06-13T13:00:00+09:00
 tags: ["diary", "docker", "dev"]
-category : ["diary", "docker", "dev"]
+category : ["2019", "06"]
 description : 맨날 삽질이야... ㅡㅡ
 toc: true
 toc_label: "정리 해야 할 글들"

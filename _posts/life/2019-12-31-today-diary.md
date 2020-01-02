@@ -3,7 +3,7 @@ title: 2019 회고 및 2020 다짐
 date: 2019-12-31
 last_modified_at: 2019-12-31T15:00:00+09:00
 tags: ["diary", "retrospect", "pledge"]
-category : ["diary", "retrospect", "pledge"]
+category : ["2019", "12"]
 description : 2019년도 돌아보기 그리고, 2020 원더키디 아니 도약하기
 toc: true
 toc_label: "2019-12-31"
