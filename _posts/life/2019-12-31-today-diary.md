@@ -6,7 +6,7 @@ tags: ["diary", "retrospect", "pledge"]
 category : ["diary", "retrospect", "pledge"]
 description : 2019년도 돌아보기 그리고, 2020 원더키디 아니 도약하기
 toc: true
-toc_label: ""
+toc_label: "2019-12-31"
 toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
