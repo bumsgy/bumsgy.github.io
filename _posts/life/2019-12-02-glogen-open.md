@@ -3,7 +3,7 @@ title: 허....탈...2
 date: 2019-12-02
 last_modified_at: 2019-12-02T13:00:00+09:00
 tags: ["diary", "glogen", "dev"]
-category : ["lifelog"]
+category : ["lifelog", "2019", "12"]
 description : 하으... 사람이 안 들어오네...
 toc: true
 toc_label: ""
