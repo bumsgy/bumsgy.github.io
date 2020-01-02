@@ -3,16 +3,16 @@ title: 2019 회고 및 2020 다짐
 date: 2019-12-31
 last_modified_at: 2019-12-31T15:00:00+09:00
 tags: ["diary", "retrospect", "pledge"]
-category : ["2019", "12"]
+category : ["lifelog"]
 description : 2019년도 돌아보기 그리고, 2020 원더키디 아니 도약하기
 toc: true
-toc_label: "2019-12-31"
+toc_label: "2019.12.31"
 toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 ### 2019년도를 돌아보며.
 너무나 순식간에 지나간 한 해 였습니다. \\
-정말... 힘들었던 일도 많았었네요. \\
+정말... 힘들었던 일도 많았었네요.
 
 나쁜 내용들을 먼저 이야기 해 보자면, 
 먼저, 2년동안 진행되던 소송건이 정리되었습니다. \\
