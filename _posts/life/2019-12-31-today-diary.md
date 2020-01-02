@@ -47,17 +47,17 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 20년도에는 하고 싶은게 너무 많네요. \\
 배우고 싶은게 너무 많아요. \\
 
-## frontend
+#### frontend
 일단 react도 배우고 싶고, \\
 ES7,8 관련한 내용도 좀 더 깊이 알아보려 합니다. \\
 그리고, 가장 중요한!!! 함수형 프로그래밍으로 배운걸 써 보고 싶네요. \\
 iterator를 이용하여, 최대한 오류 적게, 그리고 테스트가 가능하도록요~ 
-## backend
+#### backend
 backend로는 springboot 를 좀더 공부하고 싶어요. \\
 회사에서 하는 프로젝트는 대부분 그냥 spring이에요. \\ 
 아무래도, SI 특성상 어쩔 수가 없네요. \\
 대부분의 회사가 예전 시스템이다 보니, GIT도 쓰지 않고, SVN이니 머.. 말 다 했죠. 
-## devops
+#### devops
 마지막으로 devops를 좀 더.. 좀더 공부하고 싶어요~ \\
 가장 의욕이 강한 게 이 분야이기도 한데요. kubernatis까지 써서 해 보고 싶은데, \\
 은근 어렵네요. 정보를 얻는 것도 쉽지 않구요. \\
