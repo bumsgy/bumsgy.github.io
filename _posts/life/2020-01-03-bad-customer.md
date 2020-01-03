@@ -1,10 +1,10 @@
 ---
-title: 2019 회고 및 2020 다짐
-date: 2019-12-31
+title: 10년대에 대한 회고
+date: 2020-01-03
 last_modified_at: 2019-12-31T15:00:00+09:00
-tags: ["diary", "retrospect", "pledge"]
+tags: ["diary", "customers"]
 category : ["lifelog", "2020", "01"]
-description : 10년 동안 SI하면서 기억나는 고객
+description : 10년대 개발동안 SI하면서 기억나는 경험
 toc: true
 toc_label: "2020.01.03"
 toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
