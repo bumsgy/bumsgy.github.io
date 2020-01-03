@@ -6,7 +6,7 @@ tags: ["diary", "glogen", "dev"]
 category : ["lifelog", "2019", "12"]
 description : 하으... 사람이 안 들어오네...
 toc: true
-toc_label: ""
+toc_label: "2019.12.02"
 toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
@@ -50,7 +50,3 @@ toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 머, 들이대서 하다 보면 조금씩 틀이 잡히지 않을까 생각됩니다. \\
 \\
 (( 아, 게시판도 만들어야 겠군요. 저와의 소통 할 수단이 없네요. ))
-
-
-
-### docs 같은 구조를 더 추가할 수는 없는것인가?

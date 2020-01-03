@@ -6,15 +6,13 @@ tags: ["diary", "springboot", "dev"]
 category : ["lifelog", "2019", "07"]
 description : 나 혼자 삽질하는것만 해도 힘든데...
 toc: true
-toc_label: ""
+toc_label: "2019.07.04"
 toc_icon: "cog"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 ### springboot에 swagger 적용
 어제 springboot에 swagger를 적용해 보고 있었습니다.
 swagger2를 gradle로 import 해서 셋팅을 하려는데...
-<details>
-<summary>접기/펼치기</summary>
 
 ```java
     @Bean
@@ -27,7 +25,6 @@ swagger2를 gradle로 import 해서 셋팅을 하려는데...
                 .apiInfo(apiInfo());
     }
 ```
-</details>
 
 여기서 documentation.type, selector 등등이 몽땅 에러.. \\
 클래스를 못 찾는단다.. 아니, 클래스 따라가는 것도 되고, 다 되는데.. \\
