@@ -2,10 +2,6 @@
 {% assign author = site.data.authors[author] | default: author %}
 
 <div itemscope itemtype="https://schema.org/Person">
-    <div class="author__content">
-      <a href="/lifelog" rel="permalink">삶의 기록</a>
-      <a href="/dev" rel="permalink">개발 일기</a>
-    </div>
   {% if author.avatar %}
     <div class="author__avatar">
       {% if author.avatar contains "://" %}
