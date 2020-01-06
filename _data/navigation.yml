@@ -1,16 +1,16 @@
 # main links
 main:
-  - title: 'about'
+  - title: 'About'
     url: /about/
   - title: 'OS'
     url: /os/windows/overview/
-  - title: 'tools'
+  - title: 'Tools'
     url: /tools/intellij/intellij-first/
 #  - title: 'windows'
 #    url: /year-archive/    
-  - title: 'devOps'
+  - title: 'DevOps'
     url: /collection-archive1/
-  - title: 'Hyperledger Fabric'
+  - title: 'Etc'
     url: /docs/dev/hlf/hlf-concept/
 #  - title: 'Sample Col23lections'
 #    url: /collection-archive2/
@@ -25,72 +25,16 @@ main:
 
 # documentation links
 docs:
-  - title: Unix
-    children:
-      - title: 'Centos installation'
-        url: /docs/os/linux/linux-command/
-      - title: 'linux-command'
-        url: /docs/os/linux/linux-command/
-      - title: 'linux-java-install'
-        url: /docs/os/linux/linux-install-java/
-  - title: ETC
+  - title: Reference-URL
     children:
       - title: 'URL Summary'
-        url: /docs/URL-arrange/
-  - title: Getting Started
+        url: /docs/etc/url-arrange/
+  - title: Blog
     children:
-      - title: 'Quick-Start Guide'
-        url: /docs/quick-start-guide/
-      - title: 'Structure'
-        url: /docs/structure/
-      - title: 'Installation'
-        url: /docs/installation/
-      - title: 'Upgrading'
-        url: /docs/upgrading/
-  - title: Customization
-    children:
-      - title: 'Configuration'
+      - title: 'Installation(new)'
         url: /docs/configuration/
-      - title: 'Overriding Theme Defaults'
-        url: /docs/overriding-theme-defaults/
-      - title: 'Navigation'
-        url: /docs/navigation/
-      - title: 'UI Text'
-        url: /docs/ui-text/
-      - title: 'Authors'
-        url: /docs/authors/
-      - title: 'Layouts'
-        url: /docs/layouts/
-  - title: Content
-    children:
-      - title: 'Working with Posts'
-        url: /docs/posts/
-      - title: 'Working with Pages'
-        url: /docs/pages/
-      - title: 'Working with Collections'
-        url: /docs/collections/
-      - title: 'Helpers'
-        url: /docs/helpers/
-      - title: 'Utility Classes'
-        url: /docs/utility-classes/
-  - title: Extras
-    children:
-      - title: 'Stylesheets'
-        url: /docs/stylesheets/
-      - title: 'JavaScript'
-        url: /docs/javascript/
-  - title: Meta
-    children:
-      - title: 'History'
-        url: /docs/history/
-      - title: 'Contributing'
-        url: /docs/contributing/
-      - title: 'Old 2.2 Docs'
-        url: /docs/docs-2-2/
-      - title: 'License'
-        url: /docs/license/
-      - title: 'Terms &amp; Privacy Policy'
-        url: /terms/
+      - title: 'Installation(exist)'
+        url: /docs/blog/blog-setting-exist
 
 os:
   - title: linux
