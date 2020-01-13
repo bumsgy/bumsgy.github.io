@@ -98,7 +98,22 @@ toc: true
     ```
 
 8. 설치된 것 확인
-sudo yum list installed
+    ```bash
+      sudo yum list installed
+    ```
+
+9. 프로세스 확인
+    ```bash
+      ps -ef 
+    ```
+    하지만, 이렇게 하면 모든 프로세스가 모두 나오니, 자신이 확인하고 싶은 프로세스를 찾는데 오래 걸리겠죠? \\
+    그래서, 거의 대부분 grep을 붙여서 사용하게 됩니다. 
+    ```bash
+      ps -ef | grep {확인할 프로세스명칭}
+    ```
+    이렇게 하면, 입력한 단어가 들어간 모든 프로세스 목록만 표시해 줍니다. 
+
+
 
 
 ### centos

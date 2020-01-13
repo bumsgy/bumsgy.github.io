@@ -7,17 +7,32 @@ toc: true
 ---
 
 ### 블로그 주인장은?
+언제 그렇게 되었나... 기억도 안 나는 10년 넘은 개발자입니다. \\
+분명 개발자인데, 중간에 PM한다 머한다 하는 바람에 개발에 대한 깊이는 \\
+너무나 부족하다 판단되네요. \\
+그 생각에 좌절. 좌절하다가 좌절은 나중에 하자 생각하고, \\
+요즘엔 열심히 공부를 하려 하는 중입니다.
+
+### 취미
+예전에는 이것도 저것도 다 좋아한다 했었는데, \\
+생각 해 보면 게임을 좋아하네요. \\
+다른 것들은 모두 우선순위에서 밀릴 수 있는데, 게임만큼은 밀리지 않네요. \\
+요즘엔, 그것도 밀리고 있습니다. 육아에... ㅠㅠ 
 
 
 ### 블로그 테마는? 
 https://mmistakes.github.io 테마를 적용하고 있습니다. 
 
 
+
+<!--
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
 {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 
 [Install the Theme]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
+
+
 
 ## Notable Features
 
@@ -55,6 +70,7 @@ For even more demo pages check the [posts archive][year-archive].
 [tags-archive]: {{ "/tags/" | relative_url }}
 [year-archive]: {{ "/year-archive/" | relative_url }} -->
 
+<!--
 ---
 
 ## Credits
@@ -80,3 +96,4 @@ For even more demo pages check the [posts archive][year-archive].
 ---
 
 Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+-->
