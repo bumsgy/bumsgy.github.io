@@ -3,27 +3,18 @@ main:
   - title: 'About'
     url: /about/
   - title: 'OS'
-    url: /os/windows/overview/
+    url: /os/linux/linux-command/
   - title: 'Tools'
     url: /tools/intellij/intellij-first/
-#  - title: 'windows'
-#    url: /year-archive/    
+  - title: 'Dev'
+    url: /docs/dev/hlf/hlf-concept/
   - title: 'DevOps'
     url: /collection-archive1/
   - title: 'Etc'
-    url: /docs/dev/hlf/hlf-concept/
-#  - title: 'Sample Col23lections'
-#    url: /collection-archive2/
-#  - title: 'Sample Collㅇㅇections'
-#    url: /collection-archive3/
-#  - title: 'Sample Collectiㅍㅁㅇㅁons'
-#    url: /collection-archive4/
-#  - title: 'Sample Collectiㅁㄴons'
-#    url: /collection-archive5/
-#  - title: 'Terms &amp; Privacy Policy'
-#    url: /terms/
+    url: /docs/dev/hlf/hlf-concept1/
 
 # documentation links
+# docs is etc
 docs:
   - title: Reference-URL
     children:
@@ -40,11 +31,11 @@ os:
   - title: linux
     children:
       - title: 'linux overview'
-        url: /windows/os/over/
+        url: /os/linux/linux-command/
       - title: 'linux-command'
-        url: /docs/os/linux/linux-command/
+        url: /os/linux/linux-command/
       - title: 'linux-java-install'
-        url: /docs/os/linux/linux-install-java/
+        url: /os/linux/linux-install-java/
   - title: windows
     children:
       - title: 'windows overview'
@@ -55,6 +46,39 @@ os:
         url: /os/linux/linux-install-java/
 
 tools:
+  - title: intellij
+    children:
+      - title: 'intellij'
+        url: /tools/intellij/intellij-first/
+  - title: eclipse
+    children:
+      - title: 'intellij'
+        url: /tools/intellij/intellij-first/
+
+dev:
+  - title: frontend
+    children:
+      - title: 'intellij'
+        url: /tools/intellij/intellij-first/
+  - title: backend
+    children:
+      - title: 'intellij'
+        url: /tools/intellij/intellij-first/
+  - title: database
+    children:
+      - title: 'intellij'
+        url: /tools/intellij/intellij-first/
+  - title: HyperledgerFabric
+    children:
+      - title: 'hlf-concept'
+        url: /docs/dev/hlf/hlf-concept/
+      - title: 'hlf-os-setting'
+        url: /docs/dev/hlf/hlf-OS_setting/
+      - title: 'hlf-concept'
+        url: /tools/intellij/intellij-first/
+
+
+devOps:
   - title: intellij
     children:
       - title: 'intellij'
