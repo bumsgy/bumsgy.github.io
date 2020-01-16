@@ -7,11 +7,11 @@ main:
   - title: 'Tools'
     url: /tools/intellij/intellij-first/
   - title: 'Dev'
-    url: /docs/dev/hlf/hlf-concept/
+    url: /dev/hlf/hlf-concept/
   - title: 'DevOps'
-    url: /collection-archive1/
+    url: /collection-archive/
   - title: 'Etc'
-    url: /docs/dev/hlf/hlf-concept1/
+    url: /docs/etc/url-arrange/
 
 # documentation links
 # docs is etc
@@ -71,12 +71,11 @@ dev:
   - title: HyperledgerFabric
     children:
       - title: 'hlf-concept'
-        url: /docs/dev/hlf/hlf-concept/
+        url: /dev/hlf/hlf-concept/
       - title: 'hlf-os-setting'
-        url: /docs/dev/hlf/hlf-OS_setting/
+        url: /dev/hlf/hlf-OS_setting/
       - title: 'hlf-concept'
         url: /tools/intellij/intellij-first/
-
 
 devOps:
   - title: intellij

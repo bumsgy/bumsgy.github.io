@@ -1,6 +1,6 @@
 ---
 title: Hyperledger Fabric OS setting
-permalink: /docs/dev/hlf/hlf-OS_setting/
+permalink: /dev/hlf/hlf-OS_setting/
 excerpt: "hyperledger fabric"
 last_modified_at: 2019-08-30T17:00:00+09:00
 redirect_from:

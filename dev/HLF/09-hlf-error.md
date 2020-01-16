@@ -1,7 +1,7 @@
 ---
 title: Docker 개념
-permalink: /docs/dev/docker/docker-concept/
-excerpt: "docker concept"
+permalink: /dev/hlf/hlf-error/
+excerpt: "docker error"
 last_modified_at: 2019-08-30T17:00:00+09:00
 redirect_from:
   - /theme-setup/
