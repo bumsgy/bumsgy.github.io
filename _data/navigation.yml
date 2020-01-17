@@ -13,20 +13,7 @@ main:
   - title: 'Etc'
     url: /docs/etc/url-arrange/
 
-# documentation links
-# docs is etc
-docs:
-  - title: Reference-URL
-    children:
-      - title: 'URL Summary'
-        url: /docs/etc/url-arrange/
-  - title: Blog
-    children:
-      - title: 'Installation(new)'
-        url: /docs/configuration/
-      - title: 'Installation(exist)'
-        url: /docs/blog/blog-setting-exist
-
+# sidebar define
 os:
   - title: linux
     children:
@@ -44,7 +31,6 @@ os:
         url: /os/windows/command/
       - title: 'linux-java-install'
         url: /os/linux/linux-install-java/
-
 tools:
   - title: intellij
     children:
@@ -54,7 +40,6 @@ tools:
     children:
       - title: 'intellij'
         url: /tools/intellij/intellij-first/
-
 dev:
   - title: frontend
     children:
@@ -76,14 +61,23 @@ dev:
         url: /dev/hlf/hlf-OS_setting/
       - title: 'hlf-concept'
         url: /tools/intellij/intellij-first/
-
 devOps:
   - title: intellij
     children:
       - title: 'intellij'
         url: /tools/intellij/intellij-first/
+sidebar-etc:
+  - title: Reference-URL
+    children:
+      - title: 'URL Summary'
+        url: /docs/etc/url-arrange/
+  - title: Blog
+    children:
+      - title: 'Installation(new)'
+        url: /docs/configuration/
+      - title: 'Installation(exist)'
+        url: /docs/blog/blog-setting-exist
 
-# sidebar navigation list sample
 sidebar-sample:
   - title: 'Parent Page A'
     children:

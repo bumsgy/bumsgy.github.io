@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://bumsgy.github.com/"
+      url: "https://bumsg.github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -283,28 +283,21 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
-  # os:
-  #   output: true
-  #   permalink: /:collection/:path/
-  # tools:
-  #   output: true
-  #   permalink: /:collection/:path/
-  # dev:
-  #   output: true
-  #   permalink: /:collection/:path/
-  # devOps:
-  #   output: true
-  #   collections_dir: devOps
-  #   permalink: /:collection/:path/
+  os:
+    output: true
+    permalink: /:collection/:path/
+  tools:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
   # _posts
   - scope:
-      path: "posts"
+      path: ""
       type: posts
     values:
-      layout: posts
+      layout: single
       author_profile: true
       read_time: true
       comments: true
@@ -319,9 +312,9 @@ defaults:
       layout: single
       author_profile: true
   # bbeoms
-  # _os
+  # _docs
   - scope:
-      path: "os"
+      path: ""
       type: docs
     values:
       layout: single
@@ -330,7 +323,7 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "sidebar-sample"
+        nav: "docs"
   - scope:
       path: ""
       type: os
@@ -354,33 +347,13 @@ defaults:
       sidebar:
         nav: "tools"
   - scope:
-      path: "dev"
-      type: pages
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "sidebar-sample"
-  - scope:
-      path: ""
-      type: devOps
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "devOps"
-  - scope:
       path: "docs/etc"
       type: pages
     values:
-      layout: single
-      read_time: false
+      layout: posts
+      read_time: true
       author_profile: false
       share: false
-      comments: false
+      comments: true
+      sidebar:
+        nav: "sidebar-etc"
