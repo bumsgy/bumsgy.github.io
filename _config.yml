@@ -158,6 +158,12 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _docs
+  - _draft
+  - _os
+  - _posts
+  - _tools
+  - _dev
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -182,7 +188,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
+  - /d111ocs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
   - /windows
 keep_files:
@@ -211,6 +217,101 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  dev:
+    output: true
+    permalink: /:collection/:path/
+  os:
+    output: true
+    permalink: /:collection/:path/
+  tools:
+    output: true
+    permalink: /:collection/:path/
+  ref:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _docs
+  # - scope:
+  #     path: ""
+  #     type: docs
+  #   values:
+  #     layout: single
+  #     read_time: false
+  #     author_profile: false
+  #     share: false
+  #     comments: false
+  #     sidebar:
+  #       nav: "docs"
+  - scope:
+      path: ""
+      type: os
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "os"
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "tools"
+  # dev
+  - scope:
+      path: "_dev"
+      type: dev
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "dev"
+  - scope:
+      path: "_docs"
+      type: ref
+    values:
+      layout: single
+      read_time: true
+      author_profile: false
+      share: false
+      comments: true
+      sidebar:
+        nav: "sidebar-etc"
 
 # Sass/SCSS
 sass:
@@ -278,82 +379,3 @@ compress_html:
   ignore:
     envs: development
 
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
-  os:
-    output: true
-    permalink: /:collection/:path/
-  tools:
-    output: true
-    permalink: /:collection/:path/
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  # bbeoms
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # bbeoms
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
-  - scope:
-      path: ""
-      type: os
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "os"
-  - scope:
-      path: ""
-      type: tools
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "tools"
-  - scope:
-      path: "docs/etc"
-      type: pages
-    values:
-      layout: posts
-      read_time: true
-      author_profile: false
-      share: false
-      comments: true
-      sidebar:
-        nav: "sidebar-etc"

@@ -7,7 +7,7 @@ main:
   - title: 'Tools'
     url: /tools/intellij/intellij-first/
   - title: 'Dev'
-    url: /dev/hlf/hlf-concept/
+    url: /dev/nodejs/nodejs-install
   - title: 'DevOps'
     url: /collection-archive/
   - title: 'Etc'
@@ -41,26 +41,24 @@ tools:
       - title: 'intellij'
         url: /tools/intellij/intellij-first/
 dev:
-  - title: frontend
+  - title: 'frontend'
     children:
-      - title: 'intellij'
-        url: /tools/intellij/intellij-first/
-  - title: backend
+      - title: 'nodejs'
+        url: /dev/nodejs/nodejs-install
+      # - title: 'vue'
+      #   url: 
+  # - title: backend
+  #     children:
+  #       - title: 'spring'
+  #         url: /
+  # - title: db
+  #     children:
+  #       - title: 'spring'
+  #         url: /
+  - title: 'HLF'
     children:
-      - title: 'intellij'
-        url: /tools/intellij/intellij-first/
-  - title: database
-    children:
-      - title: 'intellij'
-        url: /tools/intellij/intellij-first/
-  - title: HyperledgerFabric
-    children:
-      - title: 'hlf-concept'
-        url: /dev/hlf/hlf-concept/
-      - title: 'hlf-os-setting'
-        url: /dev/hlf/hlf-OS_setting/
-      - title: 'hlf-concept'
-        url: /tools/intellij/intellij-first/
+      - title: 'hlf'
+        url: /dev/hlf/hlf-concept
 devOps:
   - title: intellij
     children:
@@ -77,45 +75,3 @@ sidebar-etc:
         url: /docs/configuration/
       - title: 'Installation(exist)'
         url: /docs/blog/blog-setting-exist
-
-sidebar-sample:
-  - title: 'Parent Page A'
-    children:
-      - title: 'Child Page A1'
-        url: /
-      - title: 'Child Page A2'
-        url: /
-      - title: 'Child Page A3'
-        url: /
-      - title: 'Child Page A4'
-        url: /
-  - title: 'Parent Page B'
-    children:
-      - title: 'Child Page B1'
-        url: /
-      - title: 'Child Page B2'
-        url: /
-      - title: 'Child Page B3'
-        url: /
-      - title: 'Child Page B4'
-        url: /
-      - title: 'Child Page B5'
-        url: /
-  - title: 'Parent Page C'
-    children:
-      - title: 'Child Page C1'
-        url: /
-      - title: 'Child Page C2'
-        url: /
-      - title: 'Child Page C3'
-        url: /
-      - title: 'Child Page C4'
-        url: /
-      - title: 'Child Page C5'
-        url: /
-  - title: 'Parent Page D'
-    children:
-      - title: 'Child Page D1'
-        url: /
-      - title: 'Child Page D2'
-        url: /

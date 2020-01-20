@@ -1,9 +1,11 @@
 ---
-title: VS Code. git 셋팅하기
-date: 2019-05-09
-tags: ["Dev", "tools", "Setting"]
-category : ["Dev", "vscode"]
-description : vscode에 git 셋팅하는 방법
+title: apache 설치
+permalink: /dev/server/apache/apache-install
+excerpt: "apache install"
+last_modified_at: 2019-08-30T17:00:00+09:00
+redirect_from:
+  - /theme-setup/
+toc: true
 ---
 
 ### AWS에 설치
