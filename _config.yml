@@ -231,7 +231,7 @@ collections:
   tools:
     output: true
     permalink: /:collection/:path/
-  ref:
+  etc:
     output: true
     permalink: /:collection/:path/
 
@@ -287,6 +287,7 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      related: true
       sidebar:
         nav: "tools"
   # dev
@@ -299,19 +300,21 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      related: true
       sidebar:
         nav: "dev"
   - scope:
-      path: "_docs"
-      type: ref
+      path: "_etc"
+      type: etc
     values:
       layout: single
       read_time: true
       author_profile: false
       share: false
       comments: true
+      related: true
       sidebar:
-        nav: "sidebar-etc"
+        nav: "etc"
 
 # Sass/SCSS
 sass:

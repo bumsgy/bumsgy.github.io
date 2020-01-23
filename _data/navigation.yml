@@ -55,16 +55,20 @@ dev:
   #     children:
   #       - title: 'spring'
   #         url: /
-  - title: 'HLF'
+  - title: 'Hyperledger Fabric'
     children:
-      - title: 'hlf'
+      - title: 'hlf concept'
         url: /dev/hlf/hlf-concept
+      - title: 'hlf Setting'
+        url: /dev/hlf/hlf-OS_setting
+      - title: 'hlf Error'
+        url: /dev/hlf/hlf-error
 devOps:
   - title: intellij
     children:
       - title: 'intellij'
         url: /tools/intellij/intellij-first/
-sidebar-etc:
+etc:
   - title: Reference-URL
     children:
       - title: 'URL Summary'

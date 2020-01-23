@@ -12,7 +12,8 @@ toc: true
 
 1. 종류 \\
    리눅스는 여러 종류의 리눅스가 있습니다. \\
-   리눅스 자체가 opensource이다 보니, 여러 기업에서 이를 이용하여, 자신들의 리눅스를 만들어 제공한 거죠. \\
+   리눅스 자체가 opensource이다 보니, 여러 기업에서 이를 이용하여, \\
+   자신들의 리눅스를 만들어 제공한 거죠. \\
    Ubuntu, Fedora, Centos 등등이 있습니다.
 
 2. 계열 \\
@@ -21,22 +22,25 @@ toc: true
    크게 Debian 계열, RedHat 계열로 구분합니다. \\
    Debian 계열에는 대표적으로 Ubuntu가 있습니다. \\
    RedHat 계열에는 Centos, Fedora 등이 있습니다. \\
-   Redhat 계열에 OS 조회하는 명령어를 치면, rhel라고 적히는데, 이는 Red Hat Enterprise Linux의 줄임말입니다. \\ 
+   Redhat 계열에 OS 조회하는 명령어를 치면, rhel라고 적히는데, \\
+   이는 Red Hat Enterprise Linux의 줄임말입니다. \\ 
    참조 https://www.lesstif.com/pages/viewpage.action?pageId=20775405
 
 
    debian 계열에서는 설치 시 apt-get을 사용하고, \\
-   RedHat 계열에서는 rpm(RedHat Package Manager) 또는 yum(Yellowdog Update Modified)을 사용합니다. \\
+   RedHat 계열에서는 rpm(RedHat Package Manager) \\
+   또는 yum(Yellowdog Update Modified)을 사용합니다. \\
    둘 다 패키지 관리자로서는 동일하지만, \\
    rpm은 설치 시 의존성 문제가 발생 할 수 있으며, 이를 해결 한 것이 yum입니다. 
 
    만약, 이를 모르면... 저처럼 멘붕에 빠질 수 있습니다. \\
-   ( A 프로그램을 설치해야해서 검색을 해 보니.. yum으로 한다고? 그런데 yum이 없네? \\
-     yum 설치를 검색 해 보니, apt-get을 사용하라고? 그런데 apt-get이 없네? \\
-     apt-get 설치를 검색 해 보니, yum으로 설치하라고?... 응?응? )
-   
+   ( A프로그램을 설치해야해서 검색을 해 보니.. yum으로 한다고?\\
+     그런데 yum이 없네? yum 설치를 검색 해 보니, apt-get을 사용하라고? \\
+     그런데 apt-get이 없네? apt-get 설치를 검색 해 보니, yum으로 설치하라고?\\
+     음.... 응??? 응??? )
 
-3. 파일 또는 폴더의 경로 입력 시, 맨 앞에 /를 입력한다면 root부터의 경로로 인식합니다. \\
+3. 파일 또는 폴더의 경로 입력 시, \\
+   맨 앞에 /를 입력한다면 root부터의 경로로 인식합니다. \\
    /부터 시작하지 않으면, 현재 위치부터 상대 경로로 인식합니다.
 
 
@@ -54,7 +58,8 @@ toc: true
   압축은 gzip과 b... 가 있습니다.
 
 3. 압축해제 \\
-   참고로 tar의 경우, 파일명으로 폴더를 생성 후, 해당 폴더 안에 압축을 해제 해 줍니다. \\
+   참고로 tar의 경우, 파일명으로 폴더를 생성 후,\\
+    해당 폴더 안에 압축을 해제 해 줍니다. \\
    많이 사용하는 옵션들입니다. \\
    이 정보들은 tar --help 로 확인하실 수 있습니다. \\
    x : -x, --extract, --get   >> extract files from an archive : 압축파일로부터 압축을 해제합니다. \\

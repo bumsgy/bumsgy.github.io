@@ -275,3 +275,7 @@ API를 만들어야 하는데....
 유저 등록.
 유저마다의 매일 거래 정보 등록
 유저마다의 거래 정보 조회. 이렇게 하면 되나?
+
+#### Related Posts
+  * [Hyperledger Fabric 인프라 구조](http://127.0.0.1:4000/dev/hlf/hlf-concept)
+  * [Hyperledger Fabric 서버 Error](http://127.0.0.1:4000/dev/hlf/hlf-error)
