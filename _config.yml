@@ -279,7 +279,7 @@ defaults:
       sidebar:
         nav: "os"
   - scope:
-      path: _tools"
+      path: "_tools"
       type: tools
     values:
       layout: single

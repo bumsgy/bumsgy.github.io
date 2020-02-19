@@ -5,7 +5,7 @@ main:
   - title: 'OS'
     url: /os/linux/linux-command/
   - title: 'Tools'
-    url: /tools/intellij/intellij-first/
+    url: /tools/intellij/intellij-introduce/
   - title: 'Dev'
     url: /dev/nodejs/nodejs-install
   - title: 'DevOps'
@@ -35,7 +35,7 @@ tools:
   - title: intellij
     children:
       - title: 'intellij'
-        url: /tools/intellij/intellij-first/
+        url: /tools/intellij/intellij-introduce/
   - title: eclipse
     children:
       - title: 'intellij'
