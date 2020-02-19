@@ -315,6 +315,11 @@ defaults:
       related: true
       sidebar:
         nav: "etc"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
 
 # Sass/SCSS
 sass:
