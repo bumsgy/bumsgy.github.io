@@ -42,7 +42,7 @@ toc_label: "2020.01.06"
 * evernote \\
     모르시는 분은 없으시겠죠? 저는 프리미엄으로 년간 결제하여 이용하고 있습니다. \\
     그런데, 은근 제약사항도 많고, 불편한 부분도 있어서 괜찮은 다른 툴은 없는지 언제나 보고 있다죠. \\
-    [Notion.so](https://evernote.com/) ([새창](https://evernote.com/){: target="_blank"})
+    [evernote.com](https://evernote.com/) ([새창](https://evernote.com/){: target="_blank"})
 
 * notion \\
     에버노트와 비슷한 노트 프로그램입니다. 요즘 써 보고 있는데, 꽤 괜찮네요. \\
