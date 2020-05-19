@@ -9,9 +9,8 @@ toc: true
 ---
 
 ### CentOS 7.x 설치.
-
-뿅뿅뿅~ USB에 넣어서 설치~ \\
-최소 설치 \\
+USB에 넣어서 설치~ \\
+불필요한 것들과 직접 설치를 해 보기 위해, 최소 설치를 선택합니다. \\
 나중에 유저를 생성 해 줘도 무방하지만, 저는 관리자 계정 이외, \\
 Hyperledger Fabric 계정을 같이 생성 해 주었습니다. \\
 조금이나마, 편하게 하고 싶어, 관리자 권한도 부여했습니다. \\
@@ -35,16 +34,45 @@ Hyperledger Fabric 계정을 같이 생성 해 주었습니다. \\
 쉘은 명령어 앞에 #, $도 같이 표시 할 예정입니다. \\
 다들 아시겠지만, #은 root, $는 이외의 계정입니다.
 
+
+
+### Yum
+이제 인터넷이 연결되었으니, 이제 설치 및 셋팅 작업을 해야겠죠? \\
+설치는 yum을 이용하여 설치를 진행 할 예정입니다.
+
+1. 먼저 저장소를 업데이트합니다. \\
+   업데이트 하지 않는다면, 이후 설치하는 것들이 모두 낮은 버젼으로 설치됩니다. \\
+   yum은 root로 진행해야 하기 때문에 명령어 앞에 sudo를 붙입니다.
+
+   ```bash
+     $ sudo yum update
+   ```
+
+### VI 설치
+환경설정 등의 셋팅을 하려면 일단 에디터가 필요할 듯합니다.
+
+1. vim을 설치합니다.
+
+   ```bash
+      $  sudo yum install vim
+   ```
+
+### VI 설정
+vim을 좀 더 편하게 쓰기 위해 설정을 합니다.
+
 ### shell 설정
 쉘 설정을 해 줍니다. \\
 
 현재 경로가 모두 나오면 오히려 보기 어렵다고 하시는 분들도 계시지만, \\
 hyperledger는 경로 depth도 많을 뿐더러, \\
-비슷한 명칭, 긴 directory명 때문에 저는 모두 표시하도록 했습니다.
+비슷한 명칭, 긴 directory명, 거기에 동일한 폴더명이 \\
+여기저기에 존재하고 있기 때문에 저는 모두 표시하도록 했습니다.
 
    ```bash
       $ vi ~/.bashrc
    ```
+
+   [bashrc는 무엇일까?](http://)
 
 안의 내용.
 
@@ -88,47 +116,21 @@ hyperledger는 경로 depth도 많을 뿐더러, \\
       export GOROOT
    ```
 
-### Yum
-
-설치는 yum을 이용하여 설치를 진행 할 예정입니다.
-
-1. 먼저 저장소를 업데이트합니다. \\
-   yum은 root로 진행해야 하기 때문에 명령어 앞에 sudo를 붙입니다.
-
-   ```bash
-     $ sudo yum update
-   ```
-
-### VI 설치
-이제 인터넷이 연결되었으니, 이제 셋팅 작업을 해야겠죠? \\
-셋팅을 하려면 일단 에디터가 필요할 듯합니다.
-
-1. vim을 설치합니다.
-
-   ```bash
-      $  sudo yum install vim
-   ```
-
-### VI 설정
-vim을 좀 더 편하게 쓰기 위해 설정을 합니다.
-
-1. bash의 
-
 ### nodejs 설치
 fabric은 client를 nodejs를 이용하기 때문에 nodejs를 설치해야 합니다.
 
-   ```bash
-   // 의존성 패키지 설치
-   # yum install -y gcc-c++ make     
+```bash
+// 의존성 패키지 설치
+# yum install -y gcc-c++ make     
 
-   // nodejs 최신버전 저장소 설치
-   // centos에 저장소에 있는 버젼은 아주 낮기 때문에 nodejs 저장소를 직접 추가 해 줍니다.
-   // bash 뒤에 - 는 오타 아닙니다. 
-   # curl -sL https://rpm.nodesource.com/setup_8.x | bash -
+// nodejs 최신버전 저장소 설치
+// centos에 저장소에 있는 버젼은 아주 낮기 때문에 nodejs 저장소를 직접 추가 해 줍니다.
+// bash 뒤에 - 는 오타 아닙니다. 
+# curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 
-   // 추가 된 저장소를 이용하여 nodejs를 설치합니다.
-   # yum install nodejs
-   ```
+// 추가 된 저장소를 이용하여 nodejs를 설치합니다.
+# yum install nodejs
+```
 
 ### NVM 설치
 NVM은 간단하게 말하면, nodejs 버젼 관리 프로그램입니다. \\
@@ -137,11 +139,11 @@ nodejs가 버전에 따라 오류가 많이 발생하기 합니다. \\
 NVM을 이용하여 자신이 사용할 버전을 선택합니다. \\
 설치 후 반영이 바로 되지 않기 때문에, 로그아웃 후에 다시 로그인 해 주세요. 
 
-   ```bash
-      $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```bash
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
-      $ nvm --version
-   ```
+$ nvm --version
+```
 
 ### golang 설치
 fabric chaincode는 go언어로 작성됩니다. \\
@@ -190,90 +192,77 @@ fabric chaincode는 go언어로 작성됩니다. \\
 docker 또한 epel 저장소 등을 이용하게 되면 낮은 버전의 docker가 설치되기 때문에,\\
 docker 공식 홈페이지를 보고 진행합니다.
 
-   ```bash
-      $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+```bash
+$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 
-      $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
-      $ yum repolist
+$ yum repolist
 
-      $ sudo yum install docker-ce docker-ce-cli containerd.io
+$ sudo yum install docker-ce docker-ce-cli containerd.io
 
-      $ sudo systemctl start docker
+$ sudo systemctl start docker
 
-      $ sudo systemctl enable docker
+$ sudo systemctl enable docker
 
-      $ sudo yum install docker-compose
+$ sudo yum install docker-compose
 
-      $ sudo usermod -aG docker $USER
-   ```
+$ sudo usermod -aG docker $USER
+```
 
-중요한 부분인데, 반드시 root가 아닌 따로 생성한 계정으로 설치를 진행해야 합니다. \\
+중요한 부분인데, 반드시 <span style="color:red">root가 아닌 따로 생성한 계정</span>으로 설치를 진행해야 합니다. \\
 root로 할 경우, user group이 docker가 아닌, dockerroot라는 group이 생성됩니다.\\
 그럴 경우, 컨테이너 실행 후 docker logs 를 할 때에도 권한 문제로 \\
 볼 수 없는 등, 여러 문제가 발생하는 것을 경험했습니다. 
 
-### 
 
 
 
-tar -xvzf go1.12.7.linux-amd64.tar.gz
-  mv go /usr/local
-  cd /usr/local/
-  ln -s apache-tomcat-8.0.53 tomcat
+\\<!-- ###   -->
+
+\\<!-- tar -xvzf go1.12.7.linux-amd64.tar.gz  -->
+\\<!--   mv go /usr/local  -->
+\\<!--   cd /usr/local/  -->
+\\<!--   ln -s apache-tomcat-8.0.53 tomcat  -->
+
+\\<!-- # 권한  -->
+\\<!-- 해당 폴더에 접근하고 싶다면?   -->
+\\<!-- cd 폴더명을 쓸텐데, r 이면 될 듯하지만..  -->
+\\<!-- x 권한이 있어야 함.  -->
+\\<!-- 해당 폴더에서 ls를 하려면 r 이 필요한것.  -->
+
+\\<!-- # root  -->
+\\<!-- # sudo 권한을 부여 해 주기 위함.  -->
+\\<!-- chmod u+w /etc/sudoers  -->
+
+\\<!-- # 모든 유저에서 권한 부여  -->
+\\<!-- %wheel        ALL=(ALL)       NOPASSWD: ALL  -->
+
+\\<!-- :::: 이거 sudo 안 됨. 어디서 된다는거지? ㅡㅡ;;; 계속 sudo 요구.  -->
 
 
 
+\\<!-- yo 설치  -->
+\\<!-- :  -->
+
+\\<!-- fabric@localhost:~/go/src/github.com/ldt-hf:   -->
+\\<!-- $ yo express-no-stress ldt-api  -->
+\\<!-- ? App description [My cool app] hlf client for ldt  -->
+\\<!-- ? API Root [/api/v1]   -->
+\\<!-- ? Version [1.0.0]   -->
+\\<!-- ? OpenAPI spec version Swagger 2  -->
+\\<!-- ? Linter Airbnb  -->
+
+\\<!-- 이렇게 선택 설치.  -->
 
 
+\\<!-- API를 만들어야 하는데....  -->
 
 
-# 권한
-해당 폴더에 접근하고 싶다면? 
-cd 폴더명을 쓸텐데, r 이면 될 듯하지만..
-x 권한이 있어야 함.
-해당 폴더에서 ls를 하려면 r 이 필요한것.
-
-
-
-
-
-
-
-
-
-# root
-# sudo 권한을 부여 해 주기 위함.
-chmod u+w /etc/sudoers
-
-# 모든 유저에서 권한 부여
-%wheel        ALL=(ALL)       NOPASSWD: ALL
-
-:::: 이거 sudo 안 됨. 어디서 된다는거지? ㅡㅡ;;; 계속 sudo 요구.
-
-
-
-yo 설치
-:
-
-fabric@localhost:~/go/src/github.com/ldt-hf: 
-$ yo express-no-stress ldt-api
-? App description [My cool app] hlf client for ldt
-? API Root [/api/v1] 
-? Version [1.0.0] 
-? OpenAPI spec version Swagger 2
-? Linter Airbnb
-
-이렇게 선택 설치.
-
-
-API를 만들어야 하는데....
-
-
-유저 등록.
-유저마다의 매일 거래 정보 등록
-유저마다의 거래 정보 조회. 이렇게 하면 되나?
+\\<!-- 유저 등록.  -->
+\\<!-- 유저마다의 매일 거래 정보 등록  -->
+\\<!-- 유저마다의 거래 정보 조회. 이렇게 하면 되나?  -->
 
 #### Related Posts
-  * [Hyperledger Fabric 인프라 구조](http://127.0.0.1:4000/dev/hlf/hlf-concept)
-  * [Hyperledger Fabric 서버 Error](http://127.0.0.1:4000/dev/hlf/hlf-error)
+* [Hyperledger Fabric 인프라 구조](http://127.0.0.1:4000/dev/hlf/hlf-concept)
+* [Hyperledger Fabric 서버 Error](http://127.0.0.1:4000/dev/hlf/hlf-error)

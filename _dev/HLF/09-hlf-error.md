@@ -82,11 +82,11 @@ api 테스트 결과 에러 동일
 peer의 log를 확인 결과, chaincode 오류 메세지가 표시
 
 --------------------------------------------------------------------------------------
-2019-09-18 08:20:37.345 UTC [gossip.service] func1 -> INFO 044 Elected as a leader, starting delivery service for channel mychannel
-2019-09-18 08:20:58.787 UTC [endorser] callChaincode -> INFO 045 [mychannel][e8f16a33] Entry chaincode: name:"lscc" 
-2019-09-18 08:20:58.787 UTC [lscc] executeDeployOrUpgrade -> ERRO 046 cannot get package for chaincode (balance:0.1)-err:open /var/hyperledger/production/chaincodes/balance.0.1: no such file or directory
-2019-09-18 08:20:58.787 UTC [endorser] callChaincode -> INFO 047 [mychannel][e8f16a33] Exit chaincode: name:"lscc"  (0ms)
-2019-09-18 08:20:58.787 UTC [endorser] ProcessProposal -> ERRO 048 [mychannel][e8f16a33] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: e8f16a335c3ef4a569980a1e0bba09278f92a8c0dc2c6844f25dd58467a27656
+    2019-09-18 08:20:37.345 UTC [gossip.service] func1 -> INFO 044 Elected as a leader, starting delivery service for channel mychannel
+    2019-09-18 08:20:58.787 UTC [endorser] callChaincode -> INFO 045 [mychannel][e8f16a33] Entry chaincode: name:"lscc" 
+    2019-09-18 08:20:58.787 UTC [lscc] executeDeployOrUpgrade -> ERRO 046 cannot get package for chaincode (balance:0.1)-err:open /var/hyperledger/production/chaincodes/balance.0.1: no such file or directory
+    2019-09-18 08:20:58.787 UTC [endorser] callChaincode -> INFO 047 [mychannel][e8f16a33] Exit chaincode: name:"lscc"  (0ms)
+    2019-09-18 08:20:58.787 UTC [endorser] ProcessProposal -> ERRO 048 [mychannel][e8f16a33] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: e8f16a335c3ef4a569980a1e0bba09278f92a8c0dc2c6844f25dd58467a27656
 --------------------------------------------------------------------------------------
 
 chaincode에 대한 설정이 잘못 된 것은 아닌가 확인 필요.
@@ -122,7 +122,7 @@ cli 에서 채널 생성 및 join 확인.
 cli 로그 확인 결과,
 
 --------------------------------------------------------------------------------------
-DEBU 02b MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.nmplus.com/users/Admin@org2.nmplus.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.nmplus.com/users/Admin@org2.nmplus.com/msp/config.yaml: no such file or directory]
+    DEBU 02b MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.nmplus.com/users/Admin@org2.nmplus.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.nmplus.com/users/Admin@org2.nmplus.com/msp/config.yaml: no such file or directory]
 --------------------------------------------------------------------------------------
 
 등의 에러 메세지가 발생하는 것을 파악했으나, 실제로 없는 파일인 것으로 파악됨.
@@ -131,9 +131,9 @@ configtx에서 생성이 안 되는 것인데, 이를 만들어줘야 하는 것
 cli에서 create chaincode는 에러가 발생 없으나, install에서 에러 확인
 
 --------------------------------------------------------------------------------------
-2019-09-19 03:24:21.042 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 043 Using default escc
-2019-09-19 03:24:21.042 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 044 Using default vscc
-Error: error getting chaincode code balance: path to chaincode does not exist: /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go/balance_cc
+    2019-09-19 03:24:21.042 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 043 Using default escc
+    2019-09-19 03:24:21.042 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 044 Using default vscc
+    Error: error getting chaincode code balance: path to chaincode does not exist: /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go/balance_cc
 --------------------------------------------------------------------------------------
 경로 확인 
 
