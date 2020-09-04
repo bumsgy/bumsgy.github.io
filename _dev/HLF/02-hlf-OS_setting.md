@@ -127,6 +127,7 @@ fabric은 client를 nodejs를 이용하기 때문에 nodejs를 설치해야 합�
 // centos에 저장소에 있는 버젼은 아주 낮기 때문에 nodejs 저장소를 직접 추가 해 줍니다.
 // bash 뒤에 - 는 오타 아닙니다. 
 # curl -sL https://rpm.nodesource.com/setup_8.x | bash -
+--> setup_12.x 버전 recommend
 
 // 추가 된 저장소를 이용하여 nodejs를 설치합니다.
 # yum install nodejs
@@ -190,7 +191,7 @@ fabric chaincode는 go언어로 작성됩니다. \\
 
 ### docker 설치
 docker 또한 epel 저장소 등을 이용하게 되면 낮은 버전의 docker가 설치되기 때문에,\\
-docker 공식 홈페이지를 보고 진행합니다.
+docker 공식 홈페이지를 보고 진행합니다. \\
 
 ```bash
 $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
@@ -215,7 +216,31 @@ root로 할 경우, user group이 docker가 아닌, dockerroot라는 group이 �
 그럴 경우, 컨테이너 실행 후 docker logs 를 할 때에도 권한 문제로 \\
 볼 수 없는 등, 여러 문제가 발생하는 것을 경험했습니다. 
 
+참고 : centos7에 대한 설치 방법입니다. centos8의 경우, \\
+      새로 제공되는 dnf를 이용해서 설치해야 합니다.
+      yum으로 그대로 해 보려 하니, 에러나네요.
+```bash
+       dnf install docker-ce docker-ce-cli containerd.io --nobest
+```
 
+
+[root@localhost ~]# sudo yum install docker-ce docker-ce-cli containerd.io
+Docker CE Stable - x86_64                                                                                                                          90 kB/s |  25 kB     00:00    
+오류: 
+ 문제: package docker-ce-3:19.03.12-3.el7.x86_64 requires containerd.io >= 1.2.2-3, but none of the providers can be installed
+  - cannot install the best candidate for the job
+  - package containerd.io-1.2.10-3.2.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.13-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.13-3.2.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.2-3.3.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.2-3.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.4-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.5-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.6-3.3.el7.x86_64 is filtered out by modular filtering
+(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+
+-- 의존성 있는 버전이 맞지 않아 발생하는 문제.
+-- nobest 옵션을 붙여주어서 설치
 
 
 <!-- ###   -->

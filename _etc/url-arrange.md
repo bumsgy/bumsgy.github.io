@@ -2,11 +2,11 @@
 title: "URL-arrange"
 permalink: /docs/etc/url-arrange/
 excerpt: "URL Summary"
-last_modified_at: 2020-01-06T12:00:00+09:00
+last_modified_at: 2020-09-03T12:00:00+09:00
 redirect_from:
   - /theme-setup/
 toc: true
-toc_label: "2020.01.06"
+toc_label: "2020.09.03"
 ---
 
 ### DEV 관련
@@ -22,6 +22,10 @@ toc_label: "2020.01.06"
     [openjdk 다운로드 페이지](https://github.com/ojdkbuild/ojdkbuild/) ([새창](https://github.com/ojdkbuild/ojdkbuild/){: target="_blank"})
     
 
+* 오라클에서 제공하는 JDK 다운로드 페이지 \\
+    오라클에서도 openjdk 다운로드를 제공하고 있던데, \\
+    다른 점이 있는지는 잘 모르겠네요. \\
+    [oracle openjdk 다운로드 페이지](https://jdk.java.net/) ([새창](https://jdk.java.net/){: target="_blank"})
 
 ### TOOLS 
 * RUFUS \\
@@ -36,6 +40,12 @@ toc_label: "2020.01.06"
 * tortoiseSVN \\
     SVN 서버 프로그램입니다. 저의 경우, 이 프로그램 더 애용합니다. \\
     [tortoiseSVN 다운로드](https://tortoisesvn.net/) ([새창](https://tortoisesvn.net/){: target="_blank"})
+
+* dbeaver \\
+    DB 접속 툴입니다. mariadb, oracle 등등 거의 대부분의 DB에 접속이 \\
+    가능한 것으로 보입니다. 저도 아직 많이는 써 보지 못 했지만, \\
+    ... 좋네요. ;ㅁ; \\
+    [dbeaver](https://dbeaver.io/download/) ([새창]{https://dbeaver.io/download/}{: target="_blank"})
 
 
 ### 생산성 tools

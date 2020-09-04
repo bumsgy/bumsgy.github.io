@@ -2,11 +2,11 @@
 title: "URL-arrange"
 permalink: /docs/etc/url-arrange/
 excerpt: "URL Summary"
-last_modified_at: 2020-01-06T12:00:00+09:00
+last_modified_at: 2020-09-03T12:00:00+09:00
 redirect_from:
   - /theme-setup/
 toc: true
-toc_label: "2020.01.06"
+toc_label: "2020.09.03"
 ---
 
 ### DEV 관련
@@ -20,7 +20,6 @@ toc_label: "2020.01.06"
 * java \\
     [openjdk 정보 페이지](https://openjdk.java.net/) ([새창](https://openjdk.java.net/){: target="_blank"}) \\
     [openjdk 다운로드 페이지](https://github.com/ojdkbuild/ojdkbuild/) ([새창](https://github.com/ojdkbuild/ojdkbuild/){: target="_blank"})
-    
 
 
 ### TOOLS 
@@ -36,6 +35,10 @@ toc_label: "2020.01.06"
 * tortoiseSVN \\
     SVN 서버 프로그램입니다. 저의 경우, 이 프로그램 더 애용합니다. \\
     [tortoiseSVN 다운로드](https://tortoisesvn.net/) ([새창](https://tortoisesvn.net/){: target="_blank"})
+
+* dbeaver \\
+    DB 접속 툴입니다. mariadb, oracle 등등 
+    https://dbeaver.io/download/
 
 
 ### 생산성 tools

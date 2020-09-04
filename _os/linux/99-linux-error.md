@@ -1,18 +1,20 @@
 ---
 title: "linux 환경변수 설정 방법"
-permalink: /os/linux/linux-environment-variable-setting/
-excerpt: "linux environment variable setting"
-last_modified_at: 2019-06-13T16:00:00+09:00
+permalink: /os/linux/linux-error/
+excerpt: "linux error"
+last_modified_at: 2019-09-03T16:00:00+09:00
 redirect_from:
   - /theme-setup/
 toc: true
 ---
 
+##### 임시 환경 변수 설정
 
-
-
-
-
+- ifconfig 커맨드가 안 될 경우.
+ -> net-tools 설치
+```bash
+  # yum install net-tools
+```
 
 
 

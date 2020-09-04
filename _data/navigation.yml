@@ -3,7 +3,7 @@ main:
   - title: 'About'
     url: /about/
   - title: 'OS'
-    url: /os/linux/linux-command/
+    url: /os/linux/linux-overview/
   - title: 'Tools'
     url: /tools/intellij/intellij-introduce/
   - title: 'Dev'
@@ -18,15 +18,17 @@ os:
   - title: linux
     children:
       - title: 'linux overview'
-        url: /os/linux/linux-command/
+        url: /os/linux/linux-overview/
       - title: 'linux-command'
         url: /os/linux/linux-command/
       - title: 'linux-java-install'
         url: /os/linux/linux-install-java/
+      - title: 'linux-error'
+        url: /os/linux/linux-error/
   - title: windows
     children:
       - title: 'windows overview'
-        url: /windows/os/over/
+        url: /os/windows/windows-/
       - title: 'windows-command'
         url: /os/windows/command/
       - title: 'linux-java-install'

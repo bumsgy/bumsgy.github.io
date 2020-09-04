@@ -10,6 +10,4 @@ toc: true
 
 
 
-### Hyperledger Fabric
-설치
-https://docs.docker.com/engine/install/centos/
+yum install -y git

@@ -8,58 +8,28 @@ redirect_from:
 toc: true
 ---
 
-### linux
-
-1. 종류 \\
-   리눅스는 여러 종류의 리눅스가 있습니다. \\
-   리눅스 자체가 opensource이다 보니, 여러 기업에서 이를 이용하여, \\
-   자신들의 리눅스를 만들어 제공한 거죠. \\
-   Ubuntu, Fedora, Centos 등등이 있습니다.
-
-2. 계열 \\
-   또한, 계열이 있는데, 이를 알고 있어야 편합니다. \\
-   몇몇 명령어가 다르기 때문이죠. \\
-   크게 Debian 계열, RedHat 계열로 구분합니다. \\
-   Debian 계열에는 대표적으로 Ubuntu가 있습니다. \\
-   RedHat 계열에는 Centos, Fedora 등이 있습니다. \\
-   Redhat 계열에 OS 조회하는 명령어를 치면, rhel라고 적히는데, \\
-   이는 Red Hat Enterprise Linux의 줄임말입니다. \\ 
-   참조 https://www.lesstif.com/pages/viewpage.action?pageId=20775405
-
-
-   debian 계열에서는 설치 시 apt-get을 사용하고, \\
-   RedHat 계열에서는 rpm(RedHat Package Manager) \\
-   또는 yum(Yellowdog Update Modified)을 사용합니다. \\
-   둘 다 패키지 관리자로서는 동일하지만, \\
-   rpm은 설치 시 의존성 문제가 발생 할 수 있으며, 이를 해결 한 것이 yum입니다. 
-
-   만약, 이를 모르면... 저처럼 멘붕에 빠질 수 있습니다. \\
-   ( A프로그램을 설치해야해서 검색을 해 보니.. yum으로 한다고?\\
-     그런데 yum이 없네? yum 설치를 검색 해 보니, apt-get을 사용하라고? \\
-     그런데 apt-get이 없네? apt-get 설치를 검색 해 보니, yum으로 설치하라고?\\
-     음.... 응??? 응??? )
-
-3. 파일 또는 폴더의 경로 입력 시, \\
-   맨 앞에 /를 입력한다면 root부터의 경로로 인식합니다. \\
-   /부터 시작하지 않으면, 현재 위치부터 상대 경로로 인식합니다.
-
-
 ### 공통
+---
+#### 종료 & 재부팅 
+  종료 및 재부팅은 poweroff, halt, reboot 등의 명령어가 있지만, \\
+  그냥 shutdown 하나만 알고 계셔도 됩니다. 옵션으로 모두 할 수 있거든요
+```bash
+// 지금 바로 종료하고, 컴퓨터를 종료한다. now 대신 0을 해도 됩니다.
+shutdown -h now
+// 10분 후 종료.
+shutdown -h +10
+// 지금 바로 종료 후 재부팅한다.
+shutdown -r now
+```
 
-1. 종료 \\
-    https://btyy.tistory.com/48
+\\ <!-- https://btyy.tistory.com/48 -->
 
-    ```
-    shutdown -h now     // 지금 바로 종료하고, 컴퓨터를 종료한다. now 대신 0을 해도 됩니다.
-    shutdown -r now     // 지금 바로 종료 후 재부팅한다.
-    ```
-
-2. 압축 \\
+#### 압축 & 압축풀기
+##### 압축
   압축은 gzip과 b... 가 있습니다.
 
-3. 압축해제 \\
-   참고로 tar의 경우, 파일명으로 폴더를 생성 후,\\
-    해당 폴더 안에 압축을 해제 해 줍니다. \\
+##### 압축해제
+   참고로 tar의 경우, 파일명으로 폴더를 생성 후, 해당 폴더 안에 압축을 해제 해 줍니다. \\
    많이 사용하는 옵션들입니다. \\
    이 정보들은 tar --help 로 확인하실 수 있습니다. \\
    x : -x, --extract, --get   >> extract files from an archive : 압축파일로부터 압축을 해제합니다. \\
@@ -67,61 +37,103 @@ toc: true
    z : -z, --gzip, --gunzip, --ungzip   >> filter the archive through gzip : gzip으로 압축해제합니다.  \\
    f : -f, --file=ARCHIVE   >> use archive file or device ARCHIVE
 
-    ```bash
-      tar -xvzf apache-tomcat-8.0.52.tar.gz
-      mv apache-tomcat-8.0.53 /usr/local
-      cd /usr/local/
-      ln -s apache-tomcat-8.0.53 tomcat
-    ```
-  참조 blog[^1]
+```bash
+  tar -xvzf apache-tomcat-8.0.52.tar.gz
+  mv apache-tomcat-8.0.53 /usr/local
+  cd /usr/local/
+  ln -s apache-tomcat-8.0.53 tomcat
+```
+  
 
-4. 삭제 \\
-   삭제 명령어로는 rm을 사용합니다. \\
-   가장 많이 사용하는 옵션은 -rf로서, \\
-   -r 옵션 은 하위디렉토리, 폴더 내 파일이 있을 경우, 같이 삭제합니다. \\
-   ( 옵션을 안 써준다면, 하위 디렉토리나 파일이 있으면 삭제가 되지 않습니다. ) \\
-   -f 옵션은 삭제 시 확인 과정을 거치지 않습니다.  \\
-   관리자 계정으로 로그인해서 rm -rf / 를 입력하는 실수는 하지 않도록 주의합니다.  \\
-   ( 이렇게 하면 모든 데이터가 삭제됩니다. 주의, 또 주의!! )
+#### 삭제
+삭제 명령어로는 rm을 사용합니다. \\
+가장 많이 사용하는 옵션은 -rf로서, \\
+-r 옵션 은 하위디렉토리, 폴더 내 파일이 있을 경우, 같이 삭제합니다. \\
+( 옵션을 안 써준다면, 하위 디렉토리나 파일이 있으면 삭제가 되지 않습니다. ) \\
+-f 옵션은 삭제 시 확인 과정을 거치지 않습니다.  \\
+관리자 계정으로 로그인해서 rm -rf / 를 입력하는 실수는 하지 않도록 주의합니다.  \\
+( 이렇게 하면 모든 데이터가 삭제됩니다. 주의, 또 주의!!  \\
+  모든 데이터에는 OS도 포함됩니다. )
 
-    ```bash
-      rm -rf <삭제를 원하는 폴더, 또는 파일의 경로>
-    ```
+```bash
+  rm -rf <삭제를 원하는 폴더, 또는 파일의 경로>
+```
 
-5. 이동, 파일 & 폴더명 변경
+#### 이동, 파일 & 폴더명 변경
+파일, 폴더 이동과 파일명, 폴더명 변경은 동일하게 mv를 사용합니다. \\
+아니! 나는 파일명을 변경하려는데, 폴더 이동이 되는건 아냐? \\
+이런 생각을 했기에 테스트를 해 봤는데, 해당 위치에 폴더가 있다면 \\
+폴더로 처리, 아니면 파일로 처리. 이렇게 되어 있는 듯합니다. 
+```bash
+  mv apache-tomcat-8.0.53 /usr/local
+```
+위의 예는 현재 폴더 하위에 있는 apache-tomcat-8.0.53 폴더를 \\
+/usr/local(루트 밑)  폴더 하위로 이동이란 의미가 됩니다. \\
+/usr/local 폴더가 있거든요~ 
+
+#### 버젼 확인 
+```bash
+  cat /etc/*-release
+  grep . /etc/*-release
+```
+
+#### 현재 계정 확인
+시스템에 설정된 모든 계정 리스트가 리스트됩니다.
+```bash
+  cat /etc/passwd
+```
+
+#### 프로그램 설치
+##### yum 
+yum은 프로그램 설치를 하는 것이므로, 관리자의 권한이 있어야 합니다. \\
+관리자 계정 또는 sudo 를 앞에 붙여서 실행하도록 합니다. 
+
+  설치 가능 리스트 확인 
+  ```bash
+    $ sudo yum list | grep {확인하고자 하는 프로그램명}
+  ```
+  설치된 프로그램 확인
+  ```bash
+    $ sudo yum list installed | grep {확인하고자 하는 프로그램명}
+  ``` 
+
+##### dnf 
+dnf는 centos 8 버전부터 지원되는 것으로, yum 대신 사용하라고 합니다. \\
+사용법은 yum과 거의 동일한듯합니다.
 
 
-6. 버젼 확인 
-    ```bash
-      cat /etc/*-release
-      grep . /etc/*-release
-    ```
-
-7. 현재 계정 확인
-    ```bash
-      cat /etc/passwd
-    ```
-
-8. 설치된 것 확인
-    ```bash
-      sudo yum list installed
-    ```
-
-9. 프로세스 확인
-    ```bash
-      ps -ef 
-    ```
-    하지만, 이렇게 하면 모든 프로세스가 모두 나오니, 자신이 확인하고 싶은 프로세스를 찾는데 오래 걸리겠죠? \\
-    그래서, 거의 대부분 grep을 붙여서 사용하게 됩니다. 
-    ```bash
-      ps -ef | grep {확인할 프로세스명칭}
-    ```
-    이렇게 하면, 입력한 단어가 들어간 모든 프로세스 목록만 표시해 줍니다. 
+#### 파일 위치 확인 
+  파일 위치 확인
+  ```bash
+    which {파일명}
+  ```
+  링크 일 경우, 해당 파일 위치 확인
+  ```bash
+    readlink {링크명}
+  ```
 
 
+#### 방화벽 확인 및 관리
+##### iptables 
+
+##### firewall-cmd
+centos7 이상에서는 iptables를 쓰지 않고, \\
+firewall-cmd란 명령어를 사용합니다. \\
+  포트 확인
+  ```bash
+    # firewall-cmd --list-all
+  ```
+  포트 추가 
+  ```bash
+    # firewall-cmd --permanent --zone=public --add-port=8088/tcp
+    // 추가 한 내용을 바로 적용하고 싶다면 reload 해 줘야 한다.
+    # firewall-cmd --reload
+  ```
+  참조 URL [^1]
 
 
-### centos
+### dmesg 
+network message 내용 출력
 
 1. 
 
@@ -160,7 +172,7 @@ centos에 이것이 없다. 이를 설치를 해야 무선을 쓸 수 있고, �
 
 
 
-[^1]: sample.
+[^1]: [zetawiki](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%ED%8F%AC%ED%8A%B8_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EB%AA%A9%EB%A1%9D_%ED%99%95%EC%9D%B8)
 
 
 
